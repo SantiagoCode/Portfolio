@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <FullSection>
-      <h1 className='text-2xl font-bold mb-4 font-mono'>I'm Santiago - FullStack Developer</h1>
+      <h1 className='text-4xl font-bold mb-4 font-mono'>I'm Santiago - FullStack Developer</h1>
       <ul className='flex'>
         {logoTechnologies.map(([text, ext, w, h], index) => (
           <li key={index} className='flex items-center'>
