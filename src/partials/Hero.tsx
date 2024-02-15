@@ -14,7 +14,7 @@ const Hero = () => {
   ]
 
   return (
-    <FullSection>
+    <FullSection clases='mb-32'>
       <h1 className='text-4xl font-bold mb-4 font-mono'>Im Santiago - FullStack Developer</h1>
       <ul className='flex'>
         {logoTechnologies.map(([text, ext, w, h], index) => (
