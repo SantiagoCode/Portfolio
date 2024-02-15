@@ -14,16 +14,16 @@ const AboutMe = () => {
 const AboutSantiago = () => {
   return (
     <section id='AboutSantiago' className='santiago_section mb-32'>
-      <div className="santiago_container items-center  grid gap-4 grid-cols-5">
+      <div className="santiago_container items-center xl:grid gap-4 grid-cols-5">
         <Image
           src={`/image/santiago-pic-1.jpg`}
           alt="Santiago Picture"
-          className="santiago_picture col-span-2 rounded-xl"
+          className="santiago_picture col-span-2 rounded-xl mb-16 xl:mb-0 mx-auto w-full"
           width={400}
           height={800}
           priority
         />
-        <div className="santiago_content col-span-3 text-right">
+        <div className="santiago_content col-span-3 xl:text-right">
           <h1 className="title text-4xl mb-4">
             Hello, im Santiago Salazar
           </h1>
@@ -42,7 +42,7 @@ const AboutSantiago = () => {
 
 const SantiagoExperience = () => {
   return (
-    <div className='experience_container items-center xl:grid gap-4 xl:grid-cols-5 '>
+    <div className='experience_container items-center xl:grid gap-4 grid-cols-5 '>
       <ExperienceResume />
       <TimeLine />
     </div>
