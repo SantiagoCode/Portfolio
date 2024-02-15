@@ -6,7 +6,7 @@ const FullSection = ({
   children: React.ReactNode
 }) => {
   return (
-    <div className='min-h-screen flex flex-col items-center justify-center'>
+    <div className='container mx-auto px-4 min-h-screen flex flex-col items-center justify-center'>
       {children}
     </div> 
   )
