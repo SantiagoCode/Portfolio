@@ -19,7 +19,7 @@ const Portfolio = () => {
 const ProjectCard = () => {
   return (
     <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full'>
-      <Link href='https://santiagosalazar.vercel.app/' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600'>
+      <Link href='https://santiagosalazar.vercel.app/' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 hover:from-indigo-600 hover:to-violet-600 transition-all ease-in-out duration-300 shadow-lg hover:shadow-indigo-500/50 hover:scale-95'>
         <h2 className='text-lg'>
             {/* <Icon.Book size={24} /> */}
             Portafolio
@@ -40,7 +40,7 @@ const ProjectCard = () => {
           <li className='text-xs'>Next JS</li>
         </ul>
       </Link>
-      <Link href='https://todo-vite-app.vercel.app/' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600'>
+      <Link href='https://todo-vite-app.vercel.app/' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 hover:from-indigo-600 hover:to-violet-600 transition-all ease-in-out duration-300 shadow-lg hover:shadow-indigo-500/50 hover:scale-95'>
         <h2 className='text-lg'>
             {/* <Icon.Book size={24} /> */}
             Todo-ReactApp
@@ -61,7 +61,7 @@ const ProjectCard = () => {
           <li className='text-xs'>Vite</li>
         </ul>
       </Link>
-      <Link href='https://vercel-nextjs-course-blush.vercel.app/' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600'>
+      <Link href='https://vercel-nextjs-course-blush.vercel.app/' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 hover:from-indigo-600 hover:to-violet-600 transition-all ease-in-out duration-300 shadow-lg hover:shadow-indigo-500/50 hover:scale-95'>
         <h2 className='text-lg'>
             {/* <Icon.Book size={24} /> */}
             NextJS-VercelCourse
@@ -82,7 +82,7 @@ const ProjectCard = () => {
           <li className='text-xs'>Next JS</li>
         </ul>
       </Link>
-      <Link href='https://github.com/SantiagoCode/CreateTxt' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600'>
+      <Link href='https://github.com/SantiagoCode/CreateTxt' className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 hover:from-indigo-600 hover:to-violet-600 transition-all ease-in-out duration-300 shadow-lg hover:shadow-indigo-500/50 hover:scale-95'>
         <h2 className='text-lg'>
             {/* <Icon.Book size={24} /> */}
             CreateTXT

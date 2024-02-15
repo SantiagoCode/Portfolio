@@ -18,19 +18,18 @@ const AboutSantiago = () => {
         <Image
           src={`/image/santiago-pic-1.jpg`}
           alt="Santiago Picture"
-          className="santiago_picture col-span-2 rounded-xl mb-16 xl:mb-12 mx-auto w-full"
+          className="santiago_picture col-span-2 rounded-xl mb-16 xl:mb-12 mx-auto w-full shadow-lg shadow-indigo-700 hover:shadow-indigo-500/50 transition-all duration-300"
           width={400}
           height={800}
           priority
         />
         <div className="santiago_content col-span-3 xl:text-right">
           <h1 className="title text-4xl mb-4">
-            Hello, im Santiago Salazar
+            Hello, mi nombre es Santiago Salazar
           </h1>
-          <p>Soy un FrontEnd Developer con experiencia en proyectos web de alta
+          <p>Soy un <span className="text-violet-400">FrontEnd Developer</span> con experiencia en proyectos web de alta
           exigencia, destaco por integrarme rápidamente a equipos multidisciplinarios,
-          generando impacto positivo con análisis precisos y soluciones eficientes. He
-          liderado proyectos exitosos, facilitando la comunicación entre clientes y equipos
+          generando impacto positivo con <span className="text-violet-400">análisis precisos y soluciones eficientes</span>. He <span className="text-violet-400">liderado proyectos exitosos</span>, facilitando la comunicación entre clientes y equipos
           de desarrollo. Mi enfoque está en el desarrollo FrontEnd, buscando contribuir con
           soluciones simples y interfaces intuitivas. Busco un equipo donde pueda seguir
           creciendo profesionalmente y aportar con pasión y compromiso.</p>
@@ -76,7 +75,7 @@ const TimeLine = () => {
                     <path fill-rule="nonzero" d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z" />
                 </svg>
             </div>
-            <div className="w-[calc(100%-4rem)] xl:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] xl:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow-lg shadow-indigo-700 hover:shadow-indigo-500/50 transition-all duration-300">
                 <time className="font-caveat font-medium text-indigo-500 text-xs">2022 - 2023</time>
                 <div className="font-bold text-slate-900 text-ms">Movidagrafica.co</div>
                 <div className="text-slate-500 text-xs">FullStack developer & Team Leader</div>
@@ -89,7 +88,7 @@ const TimeLine = () => {
                     <path fill-rule="nonzero" d="M10.422 1.257 4.655 7.025 2.553 4.923A.916.916 0 0 0 1.257 6.22l2.75 2.75a.916.916 0 0 0 1.296 0l6.415-6.416a.916.916 0 0 0-1.296-1.296Z" />
                 </svg>
             </div>
-            <div className="w-[calc(100%-4rem)] xl:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+            <div className="w-[calc(100%-4rem)] xl:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow-lg shadow-indigo-700 hover:shadow-indigo-500/50 transition-all duration-300">
                 <time className="font-caveat font-medium text-indigo-500 text-xs">2022</time>
                 <div className="font-bold text-slate-900 text-ms">Radikal Agencie</div>
                 <div className="text-slate-500 text-xs">FrontEnd developer</div>
