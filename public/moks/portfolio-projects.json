@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Portfolio",
+    "description": "My web portfolio (In progress)",
+    "url": "https://santiagosalazar.vercel.app/",
+    "imageRef": "/image/todoreactapp.jpg",
+    "links": [
+      ["TypeScript", "https://www.typescriptlang.org/docs/"],
+      ["Tailwind CSS", "https://v2.tailwindcss.com/docs"],
+      ["React JS", "https://react.dev/learn"],
+      ["Next JS", "https://nextjs.org/docs"]
+    ]
+  },
+  {
+    "name": "Todo React App",
+    "description": "Web application for notes and tasks",
+    "url": "https://todo-vite-app.vercel.app/",
+    "imageRef": "/image/todoreactapp.jpg",
+    "links": [
+      ["JavaScript", "https://developer.mozilla.org/es/docs/Web/JavaScript"],
+      ["Bulma CSS", "https://bulma.io/documentation/"],
+      ["React JS", "https://react.dev/learn"],
+      ["Vite", "https://vitejs.dev/guide/"]
+    ]
+  },
+  {
+    "name": "Dashboard - Vercel Course",
+    "description": "This is the repository for my practice in the vercel course about NextJS 14.",
+    "url": "https://vercel-nextjs-course-blush.vercel.app/",
+    "imageRef": "/image/todoreactapp.jpg",
+    "links": [
+      ["TypeScript", "https://www.typescriptlang.org/docs/"],
+      ["Tailwind CSS", "https://v2.tailwindcss.com/docs"],
+      ["React JS", "https://react.dev/learn"],
+      ["Next JS", "https://nextjs.org/docs"]
+    ]
+  },
+  {
+    "name": "CreateTXT",
+    "description": "Console application to create and read files",
+    "url": "https://github.com/SantiagoCode/CreateTxt",
+    "imageRef": "/image/todoreactapp.jpg",
+    "links": [
+      ["C#", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      [".NET Core", "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0"]
+    ]
+  }
+]
