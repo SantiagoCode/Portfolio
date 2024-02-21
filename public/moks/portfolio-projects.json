@@ -3,12 +3,25 @@
     "name": "Portfolio",
     "description": "My web portfolio (In progress)",
     "url": "https://santiagosalazar.vercel.app/",
-    "imageRef": "/image/todoreactapp.jpg",
+    "imageRef": "/image/portfolio.jpg",
     "links": [
       ["TypeScript", "https://www.typescriptlang.org/docs/"],
       ["Tailwind CSS", "https://v2.tailwindcss.com/docs"],
       ["React JS", "https://react.dev/learn"],
       ["Next JS", "https://nextjs.org/docs"]
+    ]
+  },
+  {
+    "name": "OnceOnce",
+    "description": "Sitio web desarrollado para agencia inmoviliaria.",
+    "url": "https://onceonceinmobiliaria.com/",
+    "imageRef": "/image/onceonce.jpg",
+    "links": [
+      ["JavaScript", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      ["BulmaCSS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      ["SASS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      ["WordPress", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      ["Laravel", "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0"]
     ]
   },
   {
@@ -27,7 +40,7 @@
     "name": "Dashboard - Vercel Course",
     "description": "This is the repository for my practice in the vercel course about NextJS 14.",
     "url": "https://vercel-nextjs-course-blush.vercel.app/",
-    "imageRef": "/image/todoreactapp.jpg",
+    "imageRef": "/image/Dashboard.jpg",
     "links": [
       ["TypeScript", "https://www.typescriptlang.org/docs/"],
       ["Tailwind CSS", "https://v2.tailwindcss.com/docs"],
@@ -39,7 +52,7 @@
     "name": "CreateTXT",
     "description": "Console application to create and read files",
     "url": "https://github.com/SantiagoCode/CreateTxt",
-    "imageRef": "/image/todoreactapp.jpg",
+    "imageRef": "/image/CreateTXT.jpg",
     "links": [
       ["C#", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
       [".NET Core", "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0"]

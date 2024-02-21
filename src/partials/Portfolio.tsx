@@ -11,7 +11,7 @@ const Portfolio = () => {
     <FullSection clases='mb-32'>
       
       <h1 className="text-4xl mb-2">Portafolio</h1>
-      <p className='text-sm mb-10 w-2/3 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, commodi dignissimos. Laboriosam ducimus nesciunt saepe facere nisi quas, magnam consequatur, enim vero voluptates magni quos debitis praesentium, earum libero ex!</p>
+      <p className='text-sm mb-10 w-2/3 text-center'>Mi fuerte es el FrontEnd y es donde se encuentras las cosas que me deslumbran, pero <span className="text-violet-400">actualmente me encuentro en desarrollo de un perfil FullStack.</span></p>
       <ProjectCard />
 
     </FullSection>
@@ -44,11 +44,6 @@ const ProjectCard = () => {
           </ul>
         </div>
       ))}
-      <div className="group flex relative">
-    <span className="bg-red-400 text-white px-2 py-1">Button</span>
-    <span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto">Tooltip</span>
-</div>
     </div>
   )
 }
