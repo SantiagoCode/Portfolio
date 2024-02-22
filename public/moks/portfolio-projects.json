@@ -25,6 +25,18 @@
     ]
   },
   {
+    "name": "NaviconUS Contructions",
+    "description": "Sitio web desarrollado para una constructora.",
+    "url": "https://naviconus.com/",
+    "imageRef": "/image/navicon.jpg",
+    "links": [
+      ["JavaScript", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      ["BulmaCSS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      ["SASS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
+      ["WordPress", "https://learn.microsoft.com/en-us/dotnet/csharp/"]
+    ]
+  },
+  {
     "name": "Todo React App",
     "description": "Web application for notes and tasks",
     "url": "https://todo-vite-app.vercel.app/",

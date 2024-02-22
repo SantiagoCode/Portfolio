@@ -20,70 +20,51 @@ const Portfolio = () => {
 const ProjectCard = () => {
   return (
     <div className='grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full'>
-      {/* {Projects.map((project, index) => (
-        <div className='ProjectCard col-span-1 px-4 py-6 bg-slate-900 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 hover:from-indigo-600 hover:to-violet-600 transition-all ease-in-out duration-300 shadow-lg hover:shadow-indigo-500/50 hover:scale-95' key={index}>
-          <h2 className='text-lg'>
-              {project.name}
-          </h2>
-          <h3 className='text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full'>{project.description}</h3>
-          <Link href={project.url}>
-            <Image
-              src={project.imageRef}
-              alt={project.name}
-              className="santiago_picture rounded mx-auto w-full mt-2 mb-2"
-              width={100}
-              height={40}
-              priority
-            />
-          </Link>
-          <ul className='flex justify-between flex-wrap'>
-            {project.links.map((link, index) => (
-              <Links href={link[1]} classNames='text-xs' key={index}>{link[0]}</Links>
-            ))}
-          </ul>
-        </div>
-      ))} */}
-      {Projects.map((project, index) => (
-        <CardContainer className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-auto rounded-xl p-6 border">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-neutral-600 dark:text-white"
-            >
-              {project.name}
-            </CardItem>
-            <CardItem
-              as="p"
-              translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-            >
-              {project.description}
-            </CardItem>
-            <CardItem translateZ="100" className="w-full mt-4">
-              <Image
-                src={project.imageRef}
-                height="1000"
-                width="1000"
-                className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                alt={project.name}
-              />
-            </CardItem>
-            <div className="flex justify-between items-center mt-20">
+      {Projects.map((project, projectKey) => (
+        <CardContainer className="inter-var" key={projectKey}>
+          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-full rounded-xl p-6 border flex flex-col justify-between">
+            <div className="">
               <CardItem
-                translateZ={20}
-                as="button"
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                translateZ="50"
+                className="text-xl font-bold text-neutral-600 dark:text-white"
+                  key={`${projectKey}-name`}
               >
-                Try now →
+                {project.name}
               </CardItem>
               <CardItem
-                translateZ={20}
-                as="button"
-                className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                as="p"
+                translateZ="60"
+                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  key={`${projectKey}-description`}
               >
-                Sign up
+                {project.description}
               </CardItem>
             </div>
+            <div className="">
+              <CardItem translateZ="100" className="w-full mt-4"
+                key={`${projectKey}-image`}>
+                <Link href={`${project.url}`}>
+                  <Image
+                    src={project.imageRef}
+                    height="1000"
+                    width="1000"
+                    className="h-50 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt={project.name}
+                    />
+                  </Link>
+              </CardItem>
+            </div>
+            <ul className='flex justify-between flex-wrap'>
+              {project.links.map((link, index) => (
+                <CardItem
+                  translateZ={20}
+                  className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                    key={`${index}-stack`}
+                >
+                      <Links href={link[1]} classNames='text-xs' key={index}>{link[0]}</Links>
+                </CardItem>
+                ))}
+              </ul>
           </CardBody>
         </CardContainer>
       ))}
