@@ -9,7 +9,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 const Portfolio = () => {
 
   return (
-    <FullSection clases='mb-12'>
+    <FullSection id='Portfolio' clases='mb-12'>
       <h1 className="text-4xl mb-2">Portafolio</h1>
       <p className='text-sm mb-10 w-2/3 text-center'>Mi fuerte es el FrontEnd y es donde se encuentras las cosas que me deslumbran, pero <span className="text-violet-400">actualmente me encuentro en desarrollo de un perfil FullStack.</span></p>
       <ProjectCard />
@@ -29,7 +29,7 @@ const ProjectCard = () => {
                 className="text-xl font-bold text-neutral-600 dark:text-white"
                   key={`${projectKey}-name`}
               >
-                {project.name}
+                {project.title}
               </CardItem>
               <CardItem
                 as="p"
@@ -37,19 +37,19 @@ const ProjectCard = () => {
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                   key={`${projectKey}-description`}
               >
-                {project.description}
+                {project.short_description}
               </CardItem>
             </div>
             <div className="">
               <CardItem translateZ="100" className="w-full mt-4"
                 key={`${projectKey}-image`}>
-                <Link href={`${project.url}`}>
+                  <Link href={`${project.page || project.url}`}>
                   <Image
                     src={project.imageRef}
                     height="1000"
                     width="1000"
                     className="h-50 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                    alt={project.name}
+                    alt={project.title}
                     />
                   </Link>
               </CardItem>

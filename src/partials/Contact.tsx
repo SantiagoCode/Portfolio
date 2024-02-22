@@ -4,7 +4,7 @@ import FullSection from '@/components/FullSection'
 const Contact = () => {
 
   return (
-    <FullSection>
+    <FullSection id='Contact'>
       <h1 className='text-2xl font-bold mb-4 font-mono'>Contact</h1>
     </FullSection>
   )
