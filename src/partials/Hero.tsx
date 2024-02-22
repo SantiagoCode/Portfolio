@@ -13,7 +13,7 @@ const Hero = () => {
   ]
 
   return (
-    <div className='container mx-auto px-4 min-h-screen flex flex-col items-center justify-center mb-32'>
+    <div className='container mx-auto px-4 min-h-screen flex flex-col items-center justify-center mb-12'>
       <h1 className=''>
         <TextGenerateEffect words={words} className='lg:text-5xl text-3xl font-bold mb-4 font-mono lg:text-center' />
       </h1>

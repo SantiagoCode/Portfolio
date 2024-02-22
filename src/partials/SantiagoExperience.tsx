@@ -4,7 +4,7 @@ import FullSection from '@/components/FullSection'
 
 const SantiagoExperience = () => {
   return (
-    <FullSection clases='mb-32'>
+    <FullSection clases='mb-12'>
       <div className='experience_container items-center xl:grid gap-4 grid-cols-5'>
         <ExperienceResume />
         <TimeLine />
@@ -15,7 +15,7 @@ const SantiagoExperience = () => {
 
 const ExperienceResume = () => {
   return (
-    <div className="santiago_content col-span-3 mb-16 xl:mb-0">
+    <div className="santiago_content col-span-3 mb-12 xl:mb-0">
       <h1 className="title text-4xl mb-6">
         Algo sobre mi experiencia laboral
       </h1>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const AboutMe = () => {
   return (
-    <FullSection clases='mb-32'>
+    <FullSection clases='mb-12'>
       <AboutSantiago />
     </FullSection>
   )
@@ -12,12 +12,12 @@ const AboutMe = () => {
 
 const AboutSantiago = () => {
   return (
-    <section id='AboutSantiago' className='santiago_section mb-32 xl:mb-0'>
+    <section id='AboutSantiago' className='santiago_section mb-12 xl:mb-0'>
       <div className="santiago_container items-center xl:grid gap-4 grid-cols-5">
         <Image
           src={`/image/santiago-pic-1.png`}
           alt="Santiago Picture"
-          className="santiago_picture col-span-2 rounded-xl mb-16 xl:mb-12 mx-auto w-full shadow-lg shadow-indigo-700 hover:shadow-indigo-500/50 transition-all duration-300"
+          className="santiago_picture col-span-2 rounded-xl mb-12 xl:mb-12 mx-auto w-full shadow-lg shadow-indigo-700 hover:shadow-indigo-500/50 transition-all duration-300"
           width={400}
           height={800}
           priority

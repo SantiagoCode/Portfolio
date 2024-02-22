@@ -9,7 +9,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 const Portfolio = () => {
 
   return (
-    <FullSection clases='mb-32'>
+    <FullSection clases='mb-12'>
       <h1 className="text-4xl mb-2">Portafolio</h1>
       <p className='text-sm mb-10 w-2/3 text-center'>Mi fuerte es el FrontEnd y es donde se encuentras las cosas que me deslumbran, pero <span className="text-violet-400">actualmente me encuentro en desarrollo de un perfil FullStack.</span></p>
       <ProjectCard />
