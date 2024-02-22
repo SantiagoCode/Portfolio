@@ -5,7 +5,7 @@ import FullSection from '@/components/FullSection'
 const SantiagoExperience = () => {
   return (
     <FullSection clases='mb-32'>
-      <div className='experience_container items-center xl:grid gap-4 grid-cols-5 '>
+      <div className='experience_container items-center xl:grid gap-4 grid-cols-5'>
         <ExperienceResume />
         <TimeLine />
       </div>
@@ -20,13 +20,19 @@ const ExperienceResume = () => {
         Algo sobre mi experiencia laboral
       </h1>
       <p>
-        Como <span className="text-violet-400">desarrollador FrontEnd apasionado</span>, me he especializado en <span className="text-violet-400">React.js</span>, creando <span className="text-violet-400">experiencias web excepcionales</span> con JavaScript y CSS. En <span className="text-violet-400">Movidagráfica™</span>, tuve la oportunidad de liderar un pequeño equipo en un proyecto de alta exigencia, lo que me permitió demostrar mis habilidades de liderazgo y atención al detalle.
+        <span>
+          Como <span className="text-violet-400">desarrollador FrontEnd apasionado</span>, me he especializado en <span className="text-violet-400">React.js</span>, creando <span className="text-violet-400">experiencias web excepcionales</span> con JavaScript y CSS. En <span className="text-violet-400">Movidagráfica™</span>, tuve la oportunidad de liderar un pequeño equipo en un proyecto de alta exigencia, lo que me permitió demostrar mis habilidades de liderazgo y atención al detalle.
+        </span>
         <br/>
         <br/>
-        Mi experiencia también incluye trabajar como <span className="text-violet-400">FrontEnd Developer</span> en <span className="text-violet-400">Studio Salvatori</span>, donde aprendí las bases del desarrollo web. Mis habilidades técnicas y experiencias incluyen: <span className="text-violet-400">React, NextJS, HTML, CSS y SASS, JavaScript y TypeScript, Git y GitHub, WordPress y ACF, Laravel, BootstrapCSS, BulmaCSS y TailwindCSS</span>.
+        <span>
+          Mi experiencia también incluye trabajar como <span className="text-violet-400">FrontEnd Developer</span> en <span className="text-violet-400">Studio Salvatori</span>, donde aprendí las bases del desarrollo web. Mis habilidades técnicas y experiencias incluyen: <span className="text-violet-400">React, NextJS, HTML, CSS y SASS, JavaScript y TypeScript, Git y GitHub, WordPress y ACF, Laravel, BootstrapCSS, BulmaCSS y TailwindCSS</span>.
+        </span>
         <br/>
         <br/>
-        Además de mi experiencia técnica, poseo una <span className="text-violet-400">certificación de inglés nivel B2</span>, lo que me permite comunicarme eficazmente en un entorno global. Estoy entusiasmado por contribuir al desarrollo de software con soluciones innovadoras, manteniéndome actualizado con las últimas tendencias tecnológicas. ¡Estoy listo para aportar con pasión y compromiso a un equipo donde pueda seguir creciendo profesionalmente!
+        <span>
+          Además de mi experiencia técnica, poseo una <span className="text-violet-400">certificación de inglés nivel B2</span>, lo que me permite comunicarme eficazmente en un entorno global. Estoy entusiasmado por contribuir al desarrollo de software con soluciones innovadoras, manteniéndome actualizado con las últimas tendencias tecnológicas. ¡Estoy listo para aportar con pasión y compromiso a un equipo donde pueda seguir creciendo profesionalmente!
+        </span>
       </p>
 
       </div>
