@@ -1,68 +1,55 @@
 [
   {
+    "id": "onceonce",
     "title": "OnceOnce",
     "short_description": "Sitio web desarrollado para agencia inmoviliaria durante mi experiencia con Movidagrafica.co.",
     "description": "Sitio web desarrollado para agencia inmoviliaria durante mi experiencia con Movidagrafica.co.",
     "url": "https://onceonceinmobiliaria.com/",
     "page": "/portfolio/onceonce",
+    "repo": "https://github.com/SantiagoCode/OnceOnce",
     "imageRef": "/image/onceonce.jpg",
-    "links": [
-      ["JavaScript", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      ["BulmaCSS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      ["SASS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      ["WordPress", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      ["Laravel", "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0"]
-    ]
+    "tech": [ "01", "02", "03", "04" ]
   },
   {
+    "id": "navicon",
     "title": "NaviconUS Contructions",
     "short_description": "Refrescamiento visual de paginas internas durante mi experiencia con Movidagrafica.co.",
     "description": "Esta es la descripcion del proyecto.",
     "url": "https://naviconus.com/",
     "page": "/portfolio/navicon",
     "imageRef": "/image/navicon.jpg",
-    "links": [
-      ["JavaScript", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      ["BulmaCSS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      ["SASS", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      ["WordPress", "https://learn.microsoft.com/en-us/dotnet/csharp/"]
-    ]
+    "tech": [ "01", "02", "03", "04" ]
   },
   {
+    "id": "todoapp",
     "title": "Todo React App",
     "short_description": "Web application for notes and tasks",
     "description": "Esta es la descripcion del proyecto.",
     "url": "https://todo-vite-app.vercel.app/",
+    "page": "/portfolio/todoapp",
+    "repo": "https://github.com/SantiagoCode/Todo-ReactApp",
     "imageRef": "/image/todoreactapp.jpg",
-    "links": [
-      ["JavaScript", "https://developer.mozilla.org/es/docs/Web/JavaScript"],
-      ["Bulma CSS", "https://bulma.io/documentation/"],
-      ["React JS", "https://react.dev/learn"],
-      ["Vite", "https://vitejs.dev/guide/"]
-    ]
+    "tech": [ "02", "05", "07" ]
   },
   {
+    "id": "vercelcourse",
     "title": "Dashboard - Vercel Course",
     "short_description": "This is the repository for my practice in the vercel course about NextJS 14.",
     "description": "Esta es la descripcion del proyecto.",
     "url": "https://vercel-nextjs-course-blush.vercel.app/",
+    "page": "/portfolio/vercelcourse",
+    "repo": "https://github.com/SantiagoCode/NextJS-VercelCourse",
     "imageRef": "/image/Dashboard.jpg",
-    "links": [
-      ["TypeScript", "https://www.typescriptlang.org/docs/"],
-      ["Tailwind CSS", "https://v2.tailwindcss.com/docs"],
-      ["React JS", "https://react.dev/learn"],
-      ["Next JS", "https://nextjs.org/docs"]
-    ]
+    "tech": [ "06", "07", "09", "10" ]
   },
   {
+    "id": "createtxt",
     "title": "CreateTXT",
     "short_description": "Console application to create and read files",
     "description": "Esta es la descripcion del proyecto.",
-    "url": "https://github.com/SantiagoCode/CreateTxt",
+    "page": "/portfolio/createtxt",
+    "repo": "https://github.com/SantiagoCode/CreateTxt",
     "imageRef": "/image/CreateTXT.jpg",
-    "links": [
-      ["C#", "https://learn.microsoft.com/en-us/dotnet/csharp/"],
-      [".NET Core", "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0"]
-    ]
+    "tech": [ "11", "12" ]
   }
 ]

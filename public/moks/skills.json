@@ -1,0 +1,76 @@
+[
+  {
+    "01": {
+      "name": "JavaScript",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "textColor": "#514C44",
+      "bgColor": "#F9E6A5"
+    },
+    "02": {
+      "name": "BulmaCSS",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "textColor": "#008C7F",
+      "bgColor": "#66E8CC"
+    },
+    "03": {
+      "name": "SASS",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "textColor": "#674859",
+      "bgColor": "#F19EDF"
+    },
+    "04": {
+      "name": "WordPress",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "textColor": "#265B80",
+      "bgColor": "#87C0ED"
+    },
+    "05": {
+      "name": "Laravel",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0",
+      "textColor": "#FF251A",
+      "bgColor": "#FF7F74"
+    },
+    "06": {
+      "name": "React JS",
+      "url": "https://react.dev/learn",
+      "textColor": "#375E7F",
+      "bgColor": "#ACE8FF"
+    },
+    "07": {
+      "name": "Vite",
+      "url": "https://vitejs.dev/guide/",
+      "textColor": "#40496F",
+      "bgColor": "#B5C7FF"
+    },
+    "08": {
+      "name": "TypeScript",
+      "url": "https://www.typescriptlang.org/docs/",
+      "textColor": "#214C80",
+      "bgColor": "#82BFFA"
+    },
+    "09": {
+      "name": "Tailwind CSS",
+      "url": "https://v2.tailwindcss.com/docs",
+      "textColor": "#22665B",
+      "bgColor": "#A8F2E7"
+    },
+    "10": {
+      "name": "Next JS",
+      "url": "https://nextjs.org/docs",
+      "textColor": "#7F7F7F",
+      "bgColor": "#7F7F7F"
+    },
+    "11": {
+      "name": "C#",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "textColor": "#1D591C",
+      "bgColor": "#6DC44D"
+    },
+    "12": {
+      "name": ".NET Core",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0",
+      "textColor": "#46376A",
+      "bgColor": "#7C53DB"
+    }
+  }
+]
