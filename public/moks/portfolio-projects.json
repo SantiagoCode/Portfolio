@@ -8,7 +8,8 @@
     "page": "/portfolio/onceonce",
     "repo": "https://github.com/SantiagoCode/OnceOnce",
     "imageRef": "/image/onceonce.jpg",
-    "tech": [ "01", "02", "03", "04" ]
+    "tech": [ "01", "02", "03", "04" ],
+    "date": "Noviembre - 2023"
   },
   {
     "id": "navicon",
@@ -18,7 +19,8 @@
     "url": "https://naviconus.com/",
     "page": "/portfolio/navicon",
     "imageRef": "/image/navicon.jpg",
-    "tech": [ "01", "02", "03", "04" ]
+    "tech": [ "01", "02", "03", "04" ],
+    "date": "Julio - 2023"
   },
   {
     "id": "todoapp",
@@ -29,7 +31,8 @@
     "page": "/portfolio/todoapp",
     "repo": "https://github.com/SantiagoCode/Todo-ReactApp",
     "imageRef": "/image/todoreactapp.jpg",
-    "tech": [ "02", "05", "07" ]
+    "tech": [ "02", "05", "07" ],
+    "date": "Diciembre - 2023"
   },
   {
     "id": "vercelcourse",
@@ -40,7 +43,8 @@
     "page": "/portfolio/vercelcourse",
     "repo": "https://github.com/SantiagoCode/NextJS-VercelCourse",
     "imageRef": "/image/Dashboard.jpg",
-    "tech": [ "06", "07", "09", "10" ]
+    "tech": [ "06", "07", "09", "10" ],
+    "date": "Diciembre - 2023"
   },
   {
     "id": "createtxt",
@@ -50,6 +54,7 @@
     "page": "/portfolio/createtxt",
     "repo": "https://github.com/SantiagoCode/CreateTxt",
     "imageRef": "/image/CreateTXT.jpg",
-    "tech": [ "11", "12" ]
+    "tech": [ "11", "12" ],
+    "date": "Enero - 2024"
   }
 ]

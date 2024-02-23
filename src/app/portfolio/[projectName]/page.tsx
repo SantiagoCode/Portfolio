@@ -30,7 +30,7 @@ const SkillsData: SkillsType = Skills[0];
 const page = ({ params }: { params: any }) => {
   const pageProject = Projects.find((project: any) => project.id === params.projectName);
   if (!pageProject) return <div>Proyecto no encontrado</div>;
-  const { title, description, url, repo, imageRef, tech }: any = pageProject;
+  const { title, description, url, repo, imageRef, tech, date }: any = pageProject;
 
   const SkillsKeys = Object.keys(SkillsData)
 
@@ -43,8 +43,8 @@ const page = ({ params }: { params: any }) => {
 
   return (
     <FullSection>
-      <header className='grid gap-20 grid-cols-5'>
-        <div className=" col-span-2">
+      <header className='grid gap-6 xl:gap-20 grid-cols-5 mb-20 xl:mb-0'>
+        <div className="xl:col-span-2 col-span-5 mt-20 xl:mt-0">
           <Image
             src={imageRef}
             height="1000"
@@ -60,7 +60,7 @@ const page = ({ params }: { params: any }) => {
             alt={'OnceOnce'}
           />
         </div>
-        <div className="content col-span-3 flex flex-col justify-center">
+        <div className="content xl:col-span-3 col-span-5 flex flex-col justify-center">
           <h1 className="title text-6xl font-bold mb-6">
             {title}
           </h1>
@@ -71,7 +71,7 @@ const page = ({ params }: { params: any }) => {
             {url && <Link href={url} className='flex mr-4'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
             {repo && <Link href={repo} className='flex mr-4'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
           </div>
-          <div className="flex justify-between my-5">
+          <div className="flex xl:flex-row flex-col justify-between my-5">
             <ul className='flex flex-wrap'>
               {technologies.map((tool: any, index: number) => (
                 <Tag key={index} url={tool.url} bgColor={tool.bgColor} txtColor={tool.textColor}>
@@ -80,7 +80,7 @@ const page = ({ params }: { params: any }) => {
               ))}
             </ul>
             <p className="font-bold text-white">
-              Noviembre - 2023
+              {date}
             </p>
           </div>
         </div>

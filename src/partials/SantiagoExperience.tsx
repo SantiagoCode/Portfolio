@@ -1,7 +1,6 @@
 import React from 'react'
 import FullSection from '@/components/FullSection'
 
-
 const SantiagoExperience = () => {
   return (
     <FullSection clases='mb-12'>

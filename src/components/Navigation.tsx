@@ -10,20 +10,23 @@ const Navigation = () => {
     ['Contact Me', '#Contact']
   ]
 
-  const navItemStyles = 'list-none capitalize hover:text-blue-500 transition-all mx-3 md:mx-6'
+  const navItemStyles = 'list-none capitalize hover:text-blue-500 transition-all ml-3 md:ml-6'
 
   return (
     <nav className='flex justify-center mt-5 absolute w-full'>
       <li className={navItemStyles}>
-        <Link href='/'>Home</Link>
+        <Link className='flex' href='/'>
+          <Icon.Home size={24} className='xl:hidden'></Icon.Home>
+          <span className='hidden xl:block'>Home</span>
+        </Link>
       </li>
 
       {links.map((link, index) => (
-        <li key={index} className={navItemStyles}>
+        <div key={index} className={`hidden xl:flex last-of-type:mr-6 ${navItemStyles}`}>
           <Link href={`/${link[1]}`}>{link[0]}</Link>
-        </li>
+        </div>
       ))}
-      <li className={`${navItemStyles} pl-6`}>
+      <li className={`${navItemStyles}`}>
         <Link href='https://www.github.com/SantiagoCode'>
           <Icon.GitHub size={24} />
         </Link>
