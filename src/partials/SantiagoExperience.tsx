@@ -34,8 +34,7 @@ const ExperienceResume = () => {
           Además de mi experiencia técnica, poseo una <span className="text-violet-400">certificación de inglés nivel B2</span>, lo que me permite comunicarme eficazmente en un entorno global. Estoy entusiasmado por contribuir al desarrollo de software con soluciones innovadoras, manteniéndome actualizado con las últimas tendencias tecnológicas. ¡Estoy listo para aportar con pasión y compromiso a un equipo donde pueda seguir creciendo profesionalmente!
         </span>
       </p>
-
-      </div>
+    </div>
   )
 }
 
