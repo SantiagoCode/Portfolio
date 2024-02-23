@@ -11,40 +11,129 @@ const Footer = () => {
   )
 }
 
-const Contact = () => {
-  
+function Contact() {
   return (
-    <div className='container mx-auto mt-20 flex flex-col'>
-      <h1 className="title text-2xl font-bold mb-16">Contact me wherever u want</h1>
-      <div className="flex justify-around">
-        <Link href={"https://www.linkedin.com/in/santiagocode/"} className="hover:scale-105 transition-all">
-          <h3 className="flex text-lg font-bold text-ms items-center">
-            <Icon.Linkedin size={32} className='mr-3' />
-            <p className='hidden lg:block'>LinkedIn</p>
-          </h3>
-        </Link>
-        <a href="mailto:santiagosalazar.dev@gmail.com" className="hover:scale-105 transition-all">
-          <h3 className="flex text-lg font-bold text-ms items-center">
-            <Icon.Mail size={32} className='mr-3' />
-            <p className='hidden lg:block'>Mail</p>
-          </h3>
-        </a>
-        <a href={"https://wa.me/04123275955"} className="hover:scale-105 transition-all">
-          <h3 className="flex text-lg font-bold text-ms items-center">
-            <Icon.Phone size={32} className='mr-3' />
-            <p className='hidden lg:block'>Phone</p>
-          </h3>
-        </a>
-        <Link href={"https://github.com/SantiagoCode"} className="hover:scale-105 transition-all">
-          <h3 className="flex text-lg font-bold text-ms items-center">
-            <Icon.GitHub size={32} className='mr-3' />
-            <p className='hidden lg:block'>Github</p>
-          </h3>
-        </Link>
+    <section className="w-full py-6 md:py-12 lg:py-16">
+      <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6 mx-auto">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in touch</h2>
+          <p className="text-gray-500 md:text-xl/relaxed dark:text-gray-400">Reach out to start a conversation.</p>
+        </div>
+        <div className="grid grid-cols-2 items-center justify-center gap-4 md:gap-8">
+          <div className="flex items-center justify-center space-x-2">
+            <Link className='flex items-center flex-col' href={"https://www.linkedin.com/in/santiagocode/"}>
+              <LinkedinIcon className="h-6 w-6" />
+              <span className="text-sm font-medium">LinkedIn</span>
+            </Link>
+          </div>
+          <div className="flex items-center justify-center space-x-2">
+            <a className='flex items-center flex-col' href={"mailto:santiagosalazar.dev@gmail.com"}>
+              <MailIcon className="h-6 w-6" />
+              <span className="text-sm font-medium">Mail</span>
+            </a>
+          </div>
+          <div className="flex items-center justify-center space-x-2">
+            <a className='flex items-center flex-col' href={"https://wa.me/04123275955"}>
+              <SmartphoneIcon className="h-6 w-6" />
+              <span className="text-sm font-medium">WhatsApp</span>
+            </a>
+          </div>
+          <div className="flex items-center justify-center space-x-2">
+            <Link className='flex items-center flex-col' href={"https://www.github.com/SantiagoCode"}>
+              <GithubIcon className="h-6 w-6" />
+              <span className="text-sm font-medium">GitHub</span>
+            </Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
+
+function GithubIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+      <path d="M9 18c-4.51 2-5-2-7-2" />
+    </svg>
+  )
+}
+
+
+function LinkedinIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+      <rect width="4" height="12" x="2" y="9" />
+      <circle cx="4" cy="4" r="2" />
+    </svg>
+  )
+}
+
+
+function MailIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  )
+}
+
+
+function SmartphoneIcon(props: any) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+      <path d="M12 18h.01" />
+    </svg>
+  )
+}
+
 
 const Copyright = () => {
   
