@@ -11,6 +11,17 @@ const Footer = () => {
   )
 }
 
+const NetworkLink = ({ children, linkDirection, network }: { children: React.ReactNode, linkDirection: string, network: string }) => {
+  return (
+    <div className="flex items-center justify-center space-x-2">
+      <a className='flex items-center flex-col' href={linkDirection}>
+        {children}
+        <span className="text-sm font-medium">{network}</span>
+      </a>
+    </div>
+  )
+}
+
 function ContactSection() {
   return (
     <section className="w-full py-6 md:py-12 lg:py-16">
@@ -20,30 +31,18 @@ function ContactSection() {
           <p className="text-gray-500 md:text-xl/relaxed dark:text-gray-400">Reach out to start a conversation.</p>
         </div>
         <div className="grid grid-cols-2 items-center justify-center gap-4 md:gap-8">
-          <div className="flex items-center justify-center space-x-2">
-            <Link className='flex items-center flex-col' href={"https://www.linkedin.com/in/santiagocode/"}>
-              <Icon.Linkedin size={26} />
-              <span className="text-sm font-medium">LinkedIn</span>
-            </Link>
-          </div>
-          <div className="flex items-center justify-center space-x-2">
-            <a className='flex items-center flex-col' href={"mailto:santiagosalazar.dev@gmail.com"}>
-              <Icon.Mail size={26} />
-              <span className="text-sm font-medium">Mail</span>
-            </a>
-          </div>
-          <div className="flex items-center justify-center space-x-2">
-            <a className='flex items-center flex-col' href={"https://wa.me/04123275955"}>
-              <Icon.Smartphone size={26} />
-              <span className="text-sm font-medium">WhatsApp</span>
-            </a>
-          </div>
-          <div className="flex items-center justify-center space-x-2">
-            <Link className='flex items-center flex-col' href={"https://www.github.com/SantiagoCode"}>
-              <Icon.GitHub size={26} />
-              <span className="text-sm font-medium">GitHub</span>
-            </Link>
-          </div>
+          <NetworkLink linkDirection='https://www.linkedin.com/in/santiagocode/' network='LinkedIn' >
+            <Icon.Linkedin size={26} />
+          </NetworkLink>
+          <NetworkLink linkDirection='mailto:santiagosalazar.dev@gmail.com' network='Mail' >
+            <Icon.Mail size={26} />
+          </NetworkLink>
+          <NetworkLink linkDirection='https://wa.me/04123275955' network='WhatsApp' >
+            <Icon.Smartphone size={26} />
+          </NetworkLink>
+          <NetworkLink linkDirection='https://www.github.com/SantiagoCode' network='GitHub' >
+            <Icon.GitHub size={26} />
+          </NetworkLink>
         </div>
       </div>
     </section>
