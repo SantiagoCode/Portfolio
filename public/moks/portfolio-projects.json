@@ -2,59 +2,59 @@
   {
     "id": "onceonce",
     "title": "OnceOnce",
-    "short_description": "Sitio web desarrollado para agencia inmoviliaria durante mi experiencia con Movidagrafica.co.",
-    "description": "Sitio web desarrollado para agencia inmoviliaria durante mi experiencia con Movidagrafica.co.",
+    "short_description": "Website developed for a real estate agency during my experience with Movidagrafica.co.",
+    "description": "Website developed for a real estate agency during my experience with Movidagrafica.co.",
     "url": "https://onceonceinmobiliaria.com/",
     "page": "/portfolio/onceonce",
     "repo": "https://github.com/SantiagoCode/OnceOnce",
     "imageRef": "/image/onceonce.jpg",
     "tech": [ "01", "02", "03", "04" ],
-    "date": "Noviembre - 2023"
+    "date": "November - 2023"
   },
   {
     "id": "navicon",
     "title": "NaviconUS Contructions",
-    "short_description": "Refrescamiento visual de paginas internas durante mi experiencia con Movidagrafica.co.",
-    "description": "Esta es la descripcion del proyecto.",
+    "short_description": "Visual refresh of internal pages during my experience with Movidagrafica.co.",
+    "description": "This is the project description.",
     "url": "https://naviconus.com/",
     "page": "/portfolio/navicon",
     "imageRef": "/image/navicon.jpg",
     "tech": [ "01", "02", "03", "04" ],
-    "date": "Julio - 2023"
+    "date": "July - 2023"
   },
   {
     "id": "todoapp",
     "title": "Todo React App",
     "short_description": "Web application for notes and tasks",
-    "description": "Esta es la descripcion del proyecto.",
+    "description": "This is the project description.",
     "url": "https://todo-vite-app.vercel.app/",
     "page": "/portfolio/todoapp",
     "repo": "https://github.com/SantiagoCode/Todo-ReactApp",
     "imageRef": "/image/todoreactapp.jpg",
-    "tech": [ "02", "05", "07" ],
-    "date": "Diciembre - 2023"
+    "tech": [ "02", "06", "07" ],
+    "date": "December - 2023"
   },
   {
     "id": "vercelcourse",
     "title": "Dashboard - Vercel Course",
     "short_description": "This is the repository for my practice in the vercel course about NextJS 14.",
-    "description": "Esta es la descripcion del proyecto.",
+    "description": "This is the project description.",
     "url": "https://vercel-nextjs-course-blush.vercel.app/",
     "page": "/portfolio/vercelcourse",
     "repo": "https://github.com/SantiagoCode/NextJS-VercelCourse",
     "imageRef": "/image/Dashboard.jpg",
     "tech": [ "06", "07", "09", "10" ],
-    "date": "Diciembre - 2023"
+    "date": "December - 2023"
   },
   {
     "id": "createtxt",
     "title": "CreateTXT",
     "short_description": "Console application to create and read files",
-    "description": "Esta es la descripcion del proyecto.",
+    "description": "This is the project description.",
     "page": "/portfolio/createtxt",
     "repo": "https://github.com/SantiagoCode/CreateTxt",
     "imageRef": "/image/CreateTXT.jpg",
     "tech": [ "11", "12" ],
-    "date": "Enero - 2024"
+    "date": "January - 2024"
   }
 ]

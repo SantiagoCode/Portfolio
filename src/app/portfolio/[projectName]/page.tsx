@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import * as Icon from 'react-feather';
+import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
 import Skills from './../../../../public/moks/skills.json';
 import Projects from './../../../../public/moks/portfolio-projects.json';
@@ -18,14 +19,6 @@ type SkillsType = {
 };
 
 const SkillsData: SkillsType = Skills[0];
-
-// interface ProjectType {
-//   title: string;
-//   description: string;
-//   url: string;
-//   imageRef: string;
-//   tech: string[][];
-// }
 
 const page = ({ params }: { params: any }) => {
   const pageProject = Projects.find((project: any) => project.id === params.projectName);
@@ -88,18 +81,5 @@ const page = ({ params }: { params: any }) => {
     </FullSection>
   )
 }
-
-const Tag = ({ children, bgColor, txtColor, url }: { children: React.ReactNode, bgColor: string, txtColor: string, url: string }) => {
-
-  return (
-    <Link href={url} 
-          className={`mr-3 text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 mb-2 rounded-full`}
-          style={{ backgroundColor: bgColor, color: txtColor }}
-        >
-      {children}
-    </Link>
-  )
-}
-
 
 export default page

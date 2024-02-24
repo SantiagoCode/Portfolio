@@ -17,21 +17,21 @@ const ExperienceResume = () => {
   return (
     <div className="santiago_content col-span-3 mb-12 xl:mb-0">
       <h1 className="title text-4xl mb-6">
-        Algo sobre mi experiencia laboral
+        Something about my work experience
       </h1>
       <p>
         <span>
-          Como <span className="text-violet-400">desarrollador FrontEnd apasionado</span>, me he especializado en <span className="text-violet-400">React.js</span>, creando <span className="text-violet-400">experiencias web excepcionales</span> con JavaScript y CSS. En <span className="text-violet-400">Movidagráfica™</span>, tuve la oportunidad de liderar un pequeño equipo en un proyecto de alta exigencia, lo que me permitió demostrar mis habilidades de liderazgo y atención al detalle.
+          As a <span className="text-violet-400">passionate FrontEnd developer</span>, I have specialized in <span className="text-violet-400">React.js</span>, creating <span className="text-violet-400">exceptional web experiences</span> with JavaScript and CSS. At <span className="text-violet-400">Movidagráfica™</span>, I had the opportunity to lead a small team on a high-demand project, allowing me to demonstrate my leadership skills and attention to detail.
         </span>
         <br/>
         <br/>
         <span>
-          Mi experiencia también incluye trabajar como <span className="text-violet-400">FrontEnd Developer</span> en <span className="text-violet-400">Studio Salvatori</span>, donde aprendí las bases del desarrollo web. Mis habilidades técnicas y experiencias incluyen: <span className="text-violet-400">React, NextJS, HTML, CSS y SASS, JavaScript y TypeScript, Git y GitHub, WordPress y ACF, Laravel, BootstrapCSS, BulmaCSS y TailwindCSS</span>.
+          My experience also includes working as a <span className="text-violet-400">FrontEnd Developer</span> at <span className="text-violet-400">Studio Salvatori</span>, where I learned the fundamentals of web development. My technical skills and experiences include: <span className="text-violet-400">React, NextJS, HTML, CSS and SASS, JavaScript and TypeScript, Git and GitHub, WordPress and ACF, Laravel, BootstrapCSS, BulmaCSS, and TailwindCSS</span>.
         </span>
         <br/>
         <br/>
         <span>
-          Además de mi experiencia técnica, poseo una <span className="text-violet-400">certificación de inglés nivel B2</span>, lo que me permite comunicarme eficazmente en un entorno global. Estoy entusiasmado por contribuir al desarrollo de software con soluciones innovadoras, manteniéndome actualizado con las últimas tendencias tecnológicas. ¡Estoy listo para aportar con pasión y compromiso a un equipo donde pueda seguir creciendo profesionalmente!
+          In addition to my technical experience, I hold a <span className="text-violet-400">B2 level English certification</span>, allowing me to communicate effectively in a global environment. I am excited to contribute to software development with innovative solutions, staying updated with the latest technological trends. I am ready to contribute with passion and commitment to a team where I can continue to grow professionally!
         </span>
       </p>
     </div>
