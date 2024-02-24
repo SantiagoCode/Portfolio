@@ -21,8 +21,8 @@ export default function Home() {
     <>
       <Hero />
       <AboutMe />
-      <SantiagoExperience />
       <Portfolio />
+      <SantiagoExperience />
     </>
   )
 }

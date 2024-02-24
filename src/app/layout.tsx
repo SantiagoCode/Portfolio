@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <Navigation />
-        <div className="flex flex-col justify-between min-h-screen bg-gradient-to-br from-zinc-900 to-sky-900">
+        <div className="flex flex-col justify-between min-h-screen bg-gradient-to-tl from-rose-500 to-cyan-400">
           {children}
           <Footer />
         </div>

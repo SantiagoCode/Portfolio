@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div className='container mx-auto px-4 min-h-screen flex flex-col items-center justify-center mb-12'>
       <h1 className=''>
-        <TextGenerateEffect words={words} className='lg:text-5xl text-3xl font-bold mb-4 font-mono lg:text-center' />
+        <TextGenerateEffect words={words} className='2xl:text-6xl lg:text-5xl text-3xl font-bold mb-4 font-mono lg:text-center' />
       </h1>
       <ul className='flex' data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="900">
         {logoTechnologies.map(([text, ext, w, h], index) => (
@@ -23,12 +23,11 @@ const Hero = () => {
             <Image
               src={`/image/${text}.${ext}`}
               alt="next Logo"
-              className=""
+              className="hover:scale-110 transition-all"
               width={Number(w)}
               height={Number(h)}
               priority
             />
-
             {( index < logoTechnologies.length - 1 ) && <div className='bg-gray-900 w-px h-4 mx-4'></div>  }
           </li>
         ))}

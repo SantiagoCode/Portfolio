@@ -24,8 +24,8 @@ const Portfolio = () => {
 
   return (
     <FullSection id='Portfolio' clases='mb-4'>
-      <h1 className="text-4xl mb-4">Portfolio</h1>
-      <p className='text-sm mb-10 w-2/3 text-center'>My strength lies in FrontEnd, and it's where I find things that dazzle me, but <span className="text-violet-400">I am currently developing a FullStack profile.</span></p>
+      <h1 className="text-5xl font-bold mb-4">Portfolio</h1>
+      <p className='text-sm mb-10 w-2/3 text-center'>My strength lies in FrontEnd, and it's where I find things that dazzle me, but <span className="text-rose-900 font-bold">I am currently developing a FullStack profile.</span></p>
       <ProjectCard />
     </FullSection>
   )
@@ -47,11 +47,11 @@ const ProjectCard = () => {
 
       return (
         <CardContainer className="inter-var" key={projectKey}>
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto h-full rounded-xl p-6 border flex flex-col justify-between">
+          <CardBody className="bg-gradient-to-br from-rose-700 to-cyan-700 relative group/card border-black/[0.1] w-auto h-full rounded-xl p-6 border flex flex-col justify-between shadow-xl">
             <div className="">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold text-neutral-600 dark:text-white"
+                className="text-xl font-bold"
                   key={`${projectKey}-name`}
               >
                 {project.title}
