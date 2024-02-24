@@ -8,6 +8,8 @@
     "page": "/portfolio/onceonce",
     "repo": "https://github.com/SantiagoCode/OnceOnce",
     "imageRef": "/image/onceonce.jpg",
+    "secondImageRef": "/image/onceonce-1.jpg",
+    "ListOfImages": [ "onceonce-2.jpg", "onceonce-3.jpg", "onceonce-4.jpg", "onceonce-5.jpg" ],
     "tech": [ "01", "02", "03", "04" ],
     "date": "November - 2023"
   },
@@ -19,20 +21,10 @@
     "url": "https://naviconus.com/",
     "page": "/portfolio/navicon",
     "imageRef": "/image/navicon.jpg",
+    "secondImageRef": "/image/navicon-1.jpg",
+    "ListOfImages": [ "navicon-2.jpg", "navicon-3.jpg", "navicon-4.jpg", "navicon-5.jpg", "navicon-6.jpg", "navicon-7.jpg", "navicon-8.jpg" ],
     "tech": [ "01", "02", "03", "04" ],
     "date": "July - 2023"
-  },
-  {
-    "id": "todoapp",
-    "title": "Todo React App",
-    "short_description": "Web application for notes and tasks",
-    "description": "This is the project description.",
-    "url": "https://todo-vite-app.vercel.app/",
-    "page": "/portfolio/todoapp",
-    "repo": "https://github.com/SantiagoCode/Todo-ReactApp",
-    "imageRef": "/image/todoreactapp.jpg",
-    "tech": [ "02", "06", "07" ],
-    "date": "December - 2023"
   },
   {
     "id": "vercelcourse",
@@ -43,7 +35,23 @@
     "page": "/portfolio/vercelcourse",
     "repo": "https://github.com/SantiagoCode/NextJS-VercelCourse",
     "imageRef": "/image/Dashboard.jpg",
+    "secondImageRef": "/image/Dashboard-1.jpg",
+    "ListOfImages": [ "Dashboard-2.jpg", "Dashboard-3.jpg" ],
     "tech": [ "06", "07", "09", "10" ],
+    "date": "December - 2023"
+  },
+  {
+    "id": "todoapp",
+    "title": "Todo React App",
+    "short_description": "Web application for notes and tasks",
+    "description": "This is the project description.",
+    "url": "https://todo-vite-app.vercel.app/",
+    "page": "/portfolio/todoapp",
+    "repo": "https://github.com/SantiagoCode/Todo-ReactApp",
+    "imageRef": "/image/todoreactapp.jpg",
+    "secondImageRef": "/image/todoreactapp-1.jpg",
+    "ListOfImages": [ ],
+    "tech": [ "02", "06", "07" ],
     "date": "December - 2023"
   },
   {
@@ -54,6 +62,7 @@
     "page": "/portfolio/createtxt",
     "repo": "https://github.com/SantiagoCode/CreateTxt",
     "imageRef": "/image/CreateTXT.jpg",
+    "ListOfImages": [ ],
     "tech": [ "11", "12" ],
     "date": "January - 2024"
   }

@@ -6,6 +6,7 @@ import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
 import Skills from './../../../../public/moks/skills.json';
 import Projects from './../../../../public/moks/portfolio-projects.json';
+import Gallery from '@/components/Gallery';
 
 type Skill = {
   name: string;
@@ -22,8 +23,22 @@ const SkillsData: SkillsType = Skills[0];
 
 const page = ({ params }: { params: any }) => {
   const pageProject = Projects.find((project: any) => project.id === params.projectName);
-  if (!pageProject) return <div>Proyecto no encontrado</div>;
-  const { title, description, url, repo, imageRef, tech, date }: any = pageProject;
+  if (!pageProject) return <div>Proyecto no encontrado</div> 
+
+  const { ListOfImages }: any = pageProject;
+  
+  return (
+    <>
+      <Header project={pageProject} />
+      {(ListOfImages.length > 0) &&
+        <Gallery project={pageProject} />
+      }
+    </>
+  )
+}
+
+const Header = ({ project }: { project: any }) => {
+  const { title, description, url, repo, imageRef, secondImageRef, tech, date }: any = project;
 
   const SkillsKeys = Object.keys(SkillsData)
 
@@ -42,17 +57,20 @@ const page = ({ params }: { params: any }) => {
             src={imageRef}
             height="1000"
             width="1000"
-            className="object-cover rounded-xl py-1"
+            className="object-cover rounded-xl py-1 shadow-md hover:shadow-2xl hover:scale-110 transition-all"
             alt={'OnceOnce'}
           />
-          <Image
-            src={imageRef}
-            height="1000"
-            width="1000"
-            className="object-cover rounded-xl py-1"
-            alt={'OnceOnce'}
-          />
+          {secondImageRef &&
+            <Image
+              src={secondImageRef || imageRef}
+              height="1000"
+              width="1000"
+              className="object-cover rounded-xl py-1 shadow-md hover:shadow-2xl hover:scale-110 transition-all"
+              alt={'OnceOnce'}
+            />
+          }
         </div>
+
         <div className="content xl:col-span-3 col-span-5 flex flex-col justify-center">
           <h1 className="title text-6xl font-bold mb-6">
             {title}
