@@ -13,7 +13,7 @@ const Navigation = () => {
   const navItemStyles = 'list-none capitalize hover:text-blue-500 transition-all ml-3 md:ml-6'
 
   return (
-    <nav className='flex justify-center mt-5 absolute w-full'>
+    <nav className='flex justify-center mt-5 absolute w-full z-10'>
       <li className={`${navItemStyles} hover:scale-105 transition-all ease-in hover:text-cyan-200`}>
         <Link className='flex' href='/'>
           <Icon.Home size={24} className='xl:hidden'></Icon.Home>
