@@ -5,7 +5,7 @@ const Links = ({ href, classNames, children }: { href: string, classNames: strin
   return (
     <Link 
       href={href} 
-      className={`${classNames} hover:font-bold transition-all`}>
+      className={`${classNames} hover:font-black transition-all`}>
         {children}
     </Link>
   )

@@ -10,11 +10,11 @@ const Navigation = () => {
     ['Contact Me', '#Contact']
   ]
 
-  const navItemStyles = 'list-none capitalize hover:text-blue-500 transition-all ml-3 md:ml-6'
+  const navItemStyles = 'list-none capitalize transition-all ml-3 md:ml-6'
 
   return (
-    <nav className='flex justify-center mt-5 absolute w-full z-10'>
-      <li className={`${navItemStyles} hover:scale-105 transition-all ease-in hover:text-cyan-200`}>
+    <nav className='flex justify-center mt-5 absolute w-full z-20'>
+      <li className={`${navItemStyles} hover:scale-105 transition-all ease-in hover:text-red-600`}>
         <Link className='flex' href='/'>
           <Icon.Home size={24} className='xl:hidden'></Icon.Home>
           <span className='hidden xl:block'>Home</span>
@@ -22,17 +22,17 @@ const Navigation = () => {
       </li>
 
       {links.map((link, index) => (
-        <div key={index} className={`hidden xl:flex last-of-type:mr-6 ${navItemStyles} hover:scale-105 transition-all ease-in hover:text-cyan-200`}>
+        <div key={index} className={`hidden xl:flex last-of-type:mr-6 ${navItemStyles} hover:scale-105 transition-all ease-in hover:text-red-600`}>
           <Link href={`/${link[1]}`} className=''>{link[0]}</Link>
         </div>
       ))}
-      <li className={`${navItemStyles} hover:scale-105 transition-all ease-in hover:text-cyan-200`}>
-        <Link className='hover:text-cyan-200' href='https://www.github.com/SantiagoCode'>
+      <li className={`${navItemStyles} hover:scale-105 transition-all ease-in hover:text-red-600`}>
+        <Link className='hover:text-red-600' href='https://www.github.com/SantiagoCode'>
           <Icon.GitHub size={24} />
         </Link>
       </li>
-      <li className={`${navItemStyles} hover:scale-105 transition-all ease-in hover:text-cyan-200`}>
-        <Link className='hover:text-cyan-200' href='https://www.linkedin.com/in/santiagocode/'>
+      <li className={`${navItemStyles} hover:scale-105 transition-all ease-in hover:text-red-600`}>
+        <Link className='hover:text-red-600' href='https://www.linkedin.com/in/santiagocode/'>
           <Icon.Linkedin size={24} />
         </Link>
       </li>

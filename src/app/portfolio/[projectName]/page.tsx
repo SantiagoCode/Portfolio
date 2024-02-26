@@ -57,7 +57,7 @@ const Header = ({ project }: { project: any }) => {
             src={imageRef}
             height="1000"
             width="1000"
-            className="object-cover rounded-xl py-1 shadow-md hover:shadow-2xl hover:scale-110 transition-all ease-in"
+            className="object-cover rounded-xl my-2 shadow-md hover:scale-105 hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300 ease-in"
             alt={'OnceOnce'}
           />
           {secondImageRef &&
@@ -65,22 +65,22 @@ const Header = ({ project }: { project: any }) => {
               src={secondImageRef || imageRef}
               height="1000"
               width="1000"
-              className="object-cover rounded-xl py-1 shadow-md hover:shadow-2xl hover:scale-110 transition-all ease-in"
+              className="object-cover rounded-xl my-2 shadow-md hover:scale-105 hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300 ease-in"
               alt={'OnceOnce'}
             />
           }
         </div>
 
         <div className="content xl:col-span-3 col-span-5 flex flex-col justify-center">
-          <h1 className="title text-6xl font-bold mb-6">
+          <h1 className="title text-6xl font-black mb-6">
             {title}
           </h1>
           <p className="description text-ms lg:text-base">
             {description}
           </p>
           <div className="flex my-4">
-            {url && <Link href={url} className='flex mr-4 hover:scale-105 transition-all ease-in'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
-            {repo && <Link href={repo} className='flex mr-4 hover:scale-105 transition-all ease-in'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+            {url && <Link href={url} className='flex mr-4 hover:scale-105 hover:text-red-700 transition-all ease-in'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+            {repo && <Link href={repo} className='flex mr-4 hover:scale-105 hover:text-red-700 transition-all ease-in'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
           </div>
           <div className="flex xl:flex-row flex-col justify-between my-5">
             <ul className='flex flex-wrap'>
@@ -90,7 +90,7 @@ const Header = ({ project }: { project: any }) => {
                 </Tag>
               ))}
             </ul>
-            <p className="font-bold">
+            <p className="font-black text-red-700">
               {date}
             </p>
           </div>

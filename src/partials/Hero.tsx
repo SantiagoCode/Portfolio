@@ -13,22 +13,31 @@ const Hero = () => {
   ]
 
   return (
-    <div className='container mx-auto px-4 min-h-screen flex flex-col items-center justify-center mb-12'>
-      <h1 className=''>
-        <TextGenerateEffect words={words} className='2xl:text-6xl lg:text-5xl text-3xl font-bold mb-4 font-mono lg:text-center' />
+    <div id='Hero' className='relative overflow-hidden px-4 min-h-screen flex flex-col items-center justify-center mb-12'>
+      <Image
+        src={`/image/bg-hero.png`}
+        alt="Hero BG"
+        className="h-full object-cover absolute"
+        width={2900}
+        height={1200}
+        priority
+      />
+      <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
+      <h1 className='z-20'>
+        <TextGenerateEffect words={words} className='2xl:text-6xl lg:text-5xl text-3xl font-black mb-4 lg:text-center bg-gradient-to-r from-red-700 to-neutral-50 bg-clip-text text-transparent' />
       </h1>
-      <ul className='flex' data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="900">
+      <ul className='z-20 flex backdrop-blur-md py-3 px-6 shadow-md shadow-red-700 rounded-full' data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="900">
         {logoTechnologies.map(([text, ext, w, h], index) => (
           <li key={index} className='flex items-center'>
             <Image
               src={`/image/${text}.${ext}`}
               alt="next Logo"
-              className="hover:scale-110 transition-all"
+              className="hover:scale-105 transition-all"
               width={Number(w)}
               height={Number(h)}
               priority
             />
-            {( index < logoTechnologies.length - 1 ) && <div className='bg-gray-900 w-px h-4 mx-4'></div>  }
+            {( index < logoTechnologies.length - 1 ) && <div className='bg-white w-px h-4 mx-4'></div>  }
           </li>
         ))}
       </ul>

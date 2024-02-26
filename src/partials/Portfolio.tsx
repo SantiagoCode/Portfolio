@@ -24,8 +24,8 @@ const Portfolio = () => {
 
   return (
     <FullSection id='Portfolio' clases='mb-4'>
-      <h1 className="text-5xl font-bold mb-4">Portfolio</h1>
-      <p className='text-sm mb-10 w-2/3 text-center'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="text-rose-900 font-bold">I am currently developing a FullStack profile.</span></p>
+      <h1 className="text-5xl font-black mb-4">Portfolio</h1>
+      <p className='text-sm mb-10 w-2/3 text-center'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="text-red-700 font-black">I am currently developing a FullStack profile.</span></p>
       <ProjectCard />
     </FullSection>
   )
@@ -47,11 +47,11 @@ const ProjectCard = () => {
 
       return (
         <CardContainer className="inter-var" key={projectKey}>
-          <CardBody className="bg-gradient-to-br from-rose-700 to-cyan-700 relative group/card border-black/[0.1] w-auto h-full rounded-xl p-6 border flex flex-col justify-between shadow-xl">
+          <CardBody className="bg-gradient-to-br from-neutral-900 to-red-800 relative group/card w-auto h-full rounded-xl p-6 border flex flex-col justify-between">
             <div className="">
               <CardItem
                 translateZ="50"
-                className="text-xl font-bold"
+                className="text-xl font-black"
                   key={`${projectKey}-name`}
               >
                 {project.title}
@@ -59,7 +59,7 @@ const ProjectCard = () => {
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                className="text-sm max-w-sm mt-2"
                 key={`${projectKey}-description`}
               >
                 {project.short_description}
@@ -73,7 +73,7 @@ const ProjectCard = () => {
                       src={project.imageRef}
                       height="1000"
                       width="1000"
-                      className="h-50 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="h-50 w-full object-cover rounded-xl hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300"
                       alt={project.title}
                     />
                   </Link>
