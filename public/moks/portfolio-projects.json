@@ -27,6 +27,45 @@
     "date": "July - 2023"
   },
   {
+    "id": "btrading",
+    "title": "BTrading",
+    "short_description": "This is the project description.",
+    "description": "This is the project description.",
+    "page": "/portfolio/btrading",
+    "repo": "https://github.com/SantiagoCode/BTrading",
+    "imageRef": "/image/btrading.jpg",
+    "secondImageRef": "/image/btrading-1.jpg",
+    "ListOfImages": [ "btrading-2.jpg", "btrading-3.jpg", "btrading-4.jpg", "btrading-5.jpg" ],
+    "tech": [ "01", "02", "03", "04" ],
+    "date": "May - 2023"
+  },
+  {
+    "id": "movidagrafica",
+    "title": "Movidagrafica",
+    "short_description": "This is the project description.",
+    "description": "This is the project description.",
+    "page": "/portfolio/movidagrafica",
+    "repo": "https://github.com/SantiagoCode/movidagrafica",
+    "imageRef": "/image/movidagrafica.jpg",
+    "secondImageRef": "/image/movidagrafica-1.jpg",
+    "ListOfImages": [ "movidagrafica-2.jpg", "movidagrafica-3.jpg", "movidagrafica-4.jpg", "movidagrafica-5.jpg", "movidagrafica-6.jpg" ],
+    "tech": [ "01", "02", "03", "04" ],
+    "date": "May - 2023"
+  },
+  {
+    "id": "galena",
+    "title": "Galena AI",
+    "short_description": "This is the project description.",
+    "description": "This is the project description.",
+    "page": "/portfolio/galena",
+    "repo": "https://github.com/SantiagoCode/galena.mg",
+    "imageRef": "/image/galena.jpg",
+    "secondImageRef": "/image/galena-2.jpg",
+    "ListOfImages": [ "galena-1.jpg", "galena-3.jpg", "galena-4.jpg" ],
+    "tech": [ "01", "02", "03", "04" ],
+    "date": "April - 2023"
+  },
+  {
     "id": "vercelcourse",
     "title": "Dashboard - Vercel Course",
     "short_description": "This is the repository for my practice in the vercel course about NextJS 14.",

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import FullSection from '@/components/FullSection'
 import * as Icon from 'react-feather'
 
@@ -31,7 +32,7 @@ const ExperienceResume = () => {
         <br/>
         <br/>
         <span>
-          In addition to my technical experience, I hold a <span className="text-rose-900 font-bold">B2 level English certification</span>, allowing me to communicate effectively in a global environment. I am excited to contribute to software development with innovative solutions, staying updated with the latest technological trends. I am ready to contribute with passion and commitment to a team where I can continue to grow professionally!
+          In addition to my technical experience, I hold a <Link href={'https://www.efset.org/cert/xFaeXR'} className="text-rose-900 font-bold">B2 level English certification</Link>, allowing me to communicate effectively in a global environment. I am excited to contribute to software development with innovative solutions, staying updated with the latest technological trends. I am ready to contribute with passion and commitment to a team where I can continue to grow professionally!
         </span>
       </p>
     </div>
