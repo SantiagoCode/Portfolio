@@ -35,7 +35,7 @@ const Hero = () => {
             <Image
               src={`/image/${text}.${ext}`}
               alt="next Logo"
-              className="hover:scale-105 transition-all"
+              className="xl:hover:scale-105 transition-all"
               width={Number(w)}
               height={Number(h)}
               priority

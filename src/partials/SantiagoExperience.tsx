@@ -54,7 +54,7 @@ const Experience = ({ date, agencie, position }: { date: string, agencie: string
       <div className="flex items-center justify-center w-10 h-10 rounded-full border group-[.is-active]:bg-white group-[.is-active]:text-emerald-50 shadow shrink-0 xl:order-1 xl:group-odd:-translate-x-1/2 xl:group-even:translate-x-1/2">
           <Icon.Check size={21} color='black' />
       </div>
-      <div className="w-[calc(100%-4rem)] xl:w-[calc(50%-2.5rem)] bg-gradient-to-br from-neutral-900 to-red-800 p-4 rounded border hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300">
+      <div className="w-[calc(100%-4rem)] xl:w-[calc(50%-2.5rem)] bg-gradient-to-br from-neutral-900 to-red-800 p-4 rounded border xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300">
           <time className="font-caveat font-medium text-xs">
             {date}
           </time>

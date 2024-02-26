@@ -17,7 +17,7 @@ const AboutSantiago = () => {
         <Image
           src={`/image/santiago-pic-1.png`}
           alt="Santiago Picture"
-          className="santiago_picture col-span-2 rounded-xl mb-12 xl:mb-12 mx-auto w-full shadow-xl  hover:shadow-lg hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300"
+          className="santiago_picture col-span-2 rounded-xl mb-12 xl:mb-12 mx-auto w-full shadow-xl  xl:hover:shadow-lg xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300"
           width={400}
           height={800}
           priority

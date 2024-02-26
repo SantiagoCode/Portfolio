@@ -26,7 +26,7 @@ const Footer = () => {
 
 const NetworkLink = ({ children, linkDirection, network }: { children: React.ReactNode, linkDirection: string, network: string }) => {
   return (
-    <div className="flex items-center justify-center space-x-2 hover:scale-105 transition-all ease-in hover:text-red-700">
+    <div className="flex items-center justify-center space-x-2 xl:hover:scale-105 transition-all ease-in hover:text-red-700">
       <a className='flex items-center flex-col' href={linkDirection}>
         {children}
         <span className="text-sm font-medium">{network}</span>
@@ -66,7 +66,7 @@ const Copyright = () => {
   return (
     <div className='flex flex-col text-center justify-center py-3'>
       <Link href={'https://github.com/SantiagoCode/Portfolio'}
-            className='text-ms mb-1 text-red-700 font-black hover:scale-105 transition-all ease-in'>
+            className='text-ms mb-1 text-red-700 font-black xl:hover:scale-105 transition-all ease-in'>
         Take a look at the code of this portfolio on my GitHub. 👋
       </Link>
       <div className='text-xs'>Copyright © 2024 - Santiago Salazar Dev</div>

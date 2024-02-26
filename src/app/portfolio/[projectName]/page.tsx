@@ -50,7 +50,7 @@ const Header = ({ project }: { project: any }) => {
   }, [])
 
   return (
-    <FullSection>
+    <div className='relative overflow-hidden px-4 min-h-screen flex flex-col items-center justify-center mb-12'>
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Hero BG"
@@ -66,7 +66,7 @@ const Header = ({ project }: { project: any }) => {
             src={imageRef}
             height="1000"
             width="1000"
-            className="object-cover rounded-xl my-2 shadow-md hover:scale-105 hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300 ease-in"
+            className="object-cover rounded-xl my-2 shadow-md xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300 ease-in"
             alt={'OnceOnce'}
           />
           {secondImageRef &&
@@ -74,7 +74,7 @@ const Header = ({ project }: { project: any }) => {
               src={secondImageRef || imageRef}
               height="1000"
               width="1000"
-              className="object-cover rounded-xl my-2 shadow-md hover:scale-105 hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300 ease-in"
+              className="object-cover rounded-xl my-2 shadow-md xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300 ease-in"
               alt={'OnceOnce'}
             />
           }
@@ -88,8 +88,8 @@ const Header = ({ project }: { project: any }) => {
             {description}
           </p>
           <div className="flex my-4">
-            {url && <Link href={url} className='flex mr-4 hover:scale-105 hover:text-red-700 transition-all ease-in'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
-            {repo && <Link href={repo} className='flex mr-4 hover:scale-105 hover:text-red-700 transition-all ease-in'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+            {url && <Link href={url} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+            {repo && <Link href={repo} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
           </div>
           <div className="flex xl:flex-row flex-col justify-between my-5">
             <ul className='flex flex-wrap'>
@@ -105,7 +105,7 @@ const Header = ({ project }: { project: any }) => {
           </div>
         </div>
       </header>
-    </FullSection>
+    </div>
   )
 }
 

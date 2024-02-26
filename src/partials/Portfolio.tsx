@@ -73,7 +73,7 @@ const ProjectCard = () => {
                       src={project.imageRef}
                       height="1000"
                       width="1000"
-                      className="h-50 w-full object-cover rounded-xl hover:shadow-lg hover:shadow-neutral-500 transition-all duration-300"
+                      className="h-50 w-full object-cover rounded-xl xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300"
                       alt={project.title}
                     />
                   </Link>
