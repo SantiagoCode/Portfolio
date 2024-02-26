@@ -1,12 +1,25 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import * as Icon from 'react-feather'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col justify-between bg-black w-full px-4'>
-      <ContactSection />
-      <Copyright />
+    <div className='relative overflow-hidden flex flex-col justify-between w-full'>
+      <Image
+        src={`/image/stormtrooper.jpg`}
+        alt="Footer BG"
+        className="object-cover absolute"
+        width={2900}
+        height={1200}
+        priority
+      />
+      <div className="absolute z-10 w-full h-full bg-gradient-to-b from-black to-transparent"></div>
+      <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
+      <div className="z-20">
+        <ContactSection />
+        <Copyright />
+      </div>
     </div>
   )
 }

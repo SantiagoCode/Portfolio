@@ -10,7 +10,7 @@ const Navigation = () => {
     ['Contact Me', '#Contact']
   ]
 
-  const navItemStyles = 'list-none capitalize transition-all ml-3 md:ml-6'
+  const navItemStyles = 'list-none capitalize transition-all ml-3 md:ml-6 font-black'
 
   return (
     <nav className='flex justify-center mt-5 absolute w-full z-20'>
