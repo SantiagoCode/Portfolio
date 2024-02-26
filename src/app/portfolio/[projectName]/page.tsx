@@ -51,8 +51,17 @@ const Header = ({ project }: { project: any }) => {
 
   return (
     <FullSection>
-      <header className='grid gap-6 xl:gap-20 grid-cols-5 mb-20 xl:mb-0'>
-        <div className="xl:col-span-2 col-span-5 mt-20 xl:mt-0">
+      <Image
+        src={`/image/stormtrooper.jpg`}
+        alt="Hero BG"
+        className="h-full object-cover absolute"
+        width={2900}
+        height={1200}
+        priority
+      />
+      <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg"></div>
+      <header className='grid gap-6 xl:gap-20 grid-cols-5 mb-20 xl:mb-0 z-20'>
+        <div className="xl:col-span-2 col-span-5 mt-20 xl:mt-0 relative">
           <Image
             src={imageRef}
             height="1000"
@@ -90,7 +99,7 @@ const Header = ({ project }: { project: any }) => {
                 </Tag>
               ))}
             </ul>
-            <p className="font-black text-red-700">
+            <p className="font-black text-xl">
               {date}
             </p>
           </div>
