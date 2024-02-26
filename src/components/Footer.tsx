@@ -9,7 +9,7 @@ const Footer = () => {
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Footer BG"
-        className="object-cover absolute"
+        className="object-cover absolute min-h-screen"
         width={2900}
         height={1200}
         priority
