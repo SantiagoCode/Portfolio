@@ -9,14 +9,14 @@ const Footer = () => {
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Footer BG"
-        className="object-cover absolute min-h-screen"
+        className="object-cover absolute min-h-screen w-full"
         width={2900}
         height={1200}
         priority
       />
       <div className="absolute z-10 w-full h-full bg-gradient-to-b from-black to-transparent"></div>
       <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
-      <div className="z-20">
+      <div className="z-20 flex flex-col justify-between">
         <ContactSection />
         <Copyright />
       </div>
@@ -37,8 +37,8 @@ const NetworkLink = ({ children, linkDirection, network }: { children: React.Rea
 
 function ContactSection() {
   return (
-    <section className="w-full py-6 md:py-12 lg:py-16">
-      <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6 mx-auto">
+    <section className="w-full py-6 md:py-12 lg:py-16 min-h-[80vh] flex flex-col justify-center items-center">
+      <div className="container min-w-[300px] w-[50vw] max-w-[500px] flex flex-col items-center justify-center gap-4 text-center md:px-6 mx-auto backdrop-blur-md py-4 px-8 shadow-md shadow-red-700 rounded-3xl aspect-square xl:aspect-video">
         <div className="space-y-2">
           <h2 className="text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl">Get in touch</h2>
           <p className="md:text-xl/relaxed">Reach out to start a conversation.</p>

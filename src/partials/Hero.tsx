@@ -16,7 +16,7 @@ const Hero = () => {
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Hero BG"
-        className="h-full object-cover absolute"
+        className="h-full object-cover absolute w-full"
         width={2900}
         height={1200}
         priority
