@@ -36,3 +36,10 @@ body {
   background: #ffffff29;
   box-shadow: 0px 3px 6px #ff00006b;
 }
+
+#Portfolio .group .project-image {
+  filter: blur(4px);
+}
+#Portfolio .group:hover .project-image {
+  filter: blur(0px);
+}

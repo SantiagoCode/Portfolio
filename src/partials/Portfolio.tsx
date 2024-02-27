@@ -24,9 +24,9 @@ const Portfolio = () => {
 
   return (
     <FullSection id='Portfolio'>
-      <h1 className="text-5xl font-black mb-2">Portfolio</h1>
-      <p className='text-sm mb-10 w-2/3 text-center'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="text-red-700 font-black">I am currently developing a FullStack profile.</span></p>
-      <ProjectCard />
+      <h1 className="mb-2 text-5xl font-black">Portfolio</h1>
+      <p className='mb-10 w-2/3 text-center text-sm'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="font-black text-red-700">I am currently developing a FullStack profile.</span></p>
+        <ProjectCard />
     </FullSection>
   )
 }
@@ -35,7 +35,7 @@ const ProjectCard = () => {
   const SkillsKeys = Object.keys(SkillsData)
 
   return (
-    <div className='grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full'>
+    <div id='Portfolio' className='grid w-full grid-cols-1 gap-4'>
       {Projects.map((project, projectKey) => {
         
       const listOfSkills = project.tech.reduce((accumulator: Skill[], currentValue: string) => {
@@ -46,54 +46,35 @@ const ProjectCard = () => {
       }, []);
 
       return (
-        <CardContainer className="inter-var" key={projectKey}>
-          <CardBody className="bg-gradient-to-br from-neutral-900 to-red-800 relative group/card w-auto h-full rounded-xl p-6 border flex flex-col justify-between">
-            <div className="">
-              <CardItem
-                translateZ="50"
-                className="text-xl font-black"
-                  key={`${projectKey}-name`}
-              >
-                {project.title}
-              </CardItem>
-              <CardItem
-                as="p"
-                translateZ="60"
-                className="text-sm max-w-sm mt-2"
-                key={`${projectKey}-description`}
-              >
-                {project.short_description}
-              </CardItem>
-            </div>
-            <div className="">
-              <CardItem translateZ="100" className="w-full mt-4"
-                key={`${projectKey}-image`}>
-                  <Link href={`${project.page}`}>
-                    <Image
-                      src={project.imageRef}
-                      height="1000"
-                      width="1000"
-                      className="h-50 w-full object-cover rounded-xl xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300"
-                      alt={project.title}
-                    />
-                  </Link>
-              </CardItem>
-            </div>
-            <ul className='flex justify-between flex-wrap pt-3'>
-              {listOfSkills.map((obj: Skill, index: number) => (
-                <CardItem
-                  translateZ={40}
-                  className="px-2 rounded-xs"
-                  key={`${index}-stack`}
-                >
-                  <Tag key={index} small={true} url={obj.url} bgColor={obj.bgColor} txtColor={obj.textColor}>
-                    {obj.name}
-                  </Tag>
-                </CardItem>
-                ))}
-              </ul>
-          </CardBody>
-        </CardContainer>
+            <Link href={project.page} className='group relative mx-auto aspect-video max-h-[80vh] w-full max-w-[80vw] overflow-hidden rounded-xl border-l-2 border-red-700 transition-all duration-300'>
+              <Image
+                src={project.imageRef}
+                height="2000"
+                width="2000"
+                className="project-image absolute h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
+                alt={project.title}
+              />
+              <div className="pointer-events-none absolute z-10 h-full w-full bg-gradient-to-b from-black to-transparent opacity-100 transition-all duration-300 group-hover:opacity-0"></div>
+              <div className="pointer-events-none absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent opacity-100 transition-all duration-300 group-hover:opacity-0"></div>
+
+              <div className="content pointer-events-none relative z-20 mx-auto flex h-full flex-col justify-between px-4 py-5 transition-all duration-300 xl:px-6 xl:py-8">
+                <h1 className="project-title text-2xl font-black transition-all duration-300 group-hover:text-red-700 xl:text-9xl">
+                  {project.title}
+                </h1>
+                <div className="transition-all duration-300 group-hover:hidden">
+                  <p className="project-title max-w-[70ch] font-black">{project.description}</p>
+                  <ul className='flex flex-wrap pt-3'>
+                    {listOfSkills.map((obj: Skill, index: number) => (
+                      <div className="mr-4">
+                        <Tag key={index} small={true} url={obj.url} bgColor={obj.bgColor} txtColor={obj.textColor}>
+                          {obj.name}
+                        </Tag>
+                      </div>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </Link>
       )
       })}
     </div>
