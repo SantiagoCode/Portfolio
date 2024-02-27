@@ -50,7 +50,7 @@ const Header = ({ project }: { project: any }) => {
   }, [])
 
   return (
-    <div className='relative overflow-hidden px-4 min-h-screen flex flex-col items-center justify-center mb-12'>
+    <>
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Hero BG"
@@ -60,52 +60,54 @@ const Header = ({ project }: { project: any }) => {
         priority
       />
       <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg"></div>
-      <header className='grid gap-6 xl:gap-20 grid-cols-5 mb-20 xl:mb-0 z-20'>
-        <div className="xl:col-span-2 col-span-5 mt-20 xl:mt-0 relative">
-          <Image
-            src={imageRef}
-            height="1000"
-            width="1000"
-            className="object-cover rounded-xl my-2 shadow-md xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300 ease-in"
-            alt={'OnceOnce'}
-          />
-          {secondImageRef &&
+      <FullSection>
+        <header className='grid gap-6 xl:gap-20 grid-cols-5 mb-20 xl:mb-0 z-20'>
+          <div className="xl:col-span-2 col-span-5 mt-20 xl:mt-0 relative">
             <Image
-              src={secondImageRef || imageRef}
+              src={imageRef}
               height="1000"
               width="1000"
               className="object-cover rounded-xl my-2 shadow-md xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300 ease-in"
               alt={'OnceOnce'}
             />
-          }
-        </div>
+            {secondImageRef &&
+              <Image
+                src={secondImageRef || imageRef}
+                height="1000"
+                width="1000"
+                className="object-cover rounded-xl my-2 shadow-md xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300 ease-in"
+                alt={'OnceOnce'}
+              />
+            }
+          </div>
 
-        <div className="content xl:col-span-3 col-span-5 flex flex-col justify-center">
-          <h1 className="title text-6xl font-black mb-6">
-            {title}
-          </h1>
-          <p className="description text-ms lg:text-base">
-            {description}
-          </p>
-          <div className="flex my-4">
-            {url && <Link href={url} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
-            {repo && <Link href={repo} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
-          </div>
-          <div className="flex xl:flex-row flex-col justify-between my-5">
-            <ul className='flex flex-wrap'>
-              {technologies.map((tool: any, index: number) => (
-                <Tag key={index} url={tool.url} bgColor={tool.bgColor} txtColor={tool.textColor}>
-                  {tool.name}
-                </Tag>
-              ))}
-            </ul>
-            <p className="font-black text-xl">
-              {date}
+          <div className="content xl:col-span-3 col-span-5 flex flex-col justify-center">
+            <h1 className="title text-6xl font-black mb-6">
+              {title}
+            </h1>
+            <p className="description text-ms lg:text-base">
+              {description}
             </p>
+            <div className="flex my-4">
+              {url && <Link href={url} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+              {repo && <Link href={repo} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+            </div>
+            <div className="flex xl:flex-row flex-col justify-between my-5">
+              <ul className='flex flex-wrap'>
+                {technologies.map((tool: any, index: number) => (
+                  <Tag key={index} url={tool.url} bgColor={tool.bgColor} txtColor={tool.textColor}>
+                    {tool.name}
+                  </Tag>
+                ))}
+              </ul>
+              <p className="font-black text-xl">
+                {date}
+              </p>
+            </div>
           </div>
-        </div>
-      </header>
-    </div>
+        </header>
+      </FullSection>
+    </>
   )
 }
 
