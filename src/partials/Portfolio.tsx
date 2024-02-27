@@ -5,7 +5,6 @@ import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
 import Skills from './../../public/moks/skills.json';
 import Projects from './../../public/moks/portfolio_projects.json';
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 type Skill = {
   name: string;
