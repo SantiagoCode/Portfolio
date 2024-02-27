@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
 import Skills from './../../public/moks/skills.json';
-import Projects from './../../public/moks/portfolio_projects.json';
+import data from './../../public/moks/practices_and_articles.json';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 type Skill = {
@@ -20,23 +20,22 @@ type SkillsType = {
 
 const SkillsData: SkillsType = Skills[0];
 
-const Portfolio = () => {
+const PracticesAndArticles = () => {
 
   return (
     <FullSection id='Portfolio'>
-      <h1 className="text-5xl font-black mb-2">Portfolio</h1>
-      <p className='text-sm mb-10 w-2/3 text-center'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="text-red-700 font-black">I am currently developing a FullStack profile.</span></p>
-      <ProjectCard />
+      <h1 className="text-5xl font-black mb-2">Practices And Articles</h1>
+      <Cards />
     </FullSection>
   )
 }
 
-const ProjectCard = () => {
+const Cards = () => {
   const SkillsKeys = Object.keys(SkillsData)
 
   return (
     <div className='grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full'>
-      {Projects.map((project, projectKey) => {
+      {data.map((project, projectKey) => {
         
       const listOfSkills = project.tech.reduce((accumulator: Skill[], currentValue: string) => {
         if (SkillsKeys.includes(currentValue)) {
@@ -100,4 +99,4 @@ const ProjectCard = () => {
   )
 }
 
-export default Portfolio
+export default PracticesAndArticles

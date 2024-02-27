@@ -1,0 +1,42 @@
+[
+  {
+    "id": "vercelcourse",
+    "title": "Dashboard - Vercel Course",
+    "short_description": "This is the repository for my practice in the vercel course about NextJS 14.",
+    "description": "This is the project description.",
+    "url": "https://vercel-nextjs-course-blush.vercel.app/",
+    "page": "/portfolio/vercelcourse",
+    "repo": "https://github.com/SantiagoCode/NextJS-VercelCourse",
+    "imageRef": "/image/Dashboard.jpg",
+    "secondImageRef": "/image/Dashboard-1.jpg",
+    "ListOfImages": [ "Dashboard-2.jpg", "Dashboard-3.jpg" ],
+    "tech": [ "06", "07", "09", "10" ],
+    "date": "December - 2023"
+  },
+  {
+    "id": "todoapp",
+    "title": "Todo React App",
+    "short_description": "Web application for notes and tasks",
+    "description": "This is the project description.",
+    "url": "https://todo-vite-app.vercel.app/",
+    "page": "/portfolio/todoapp",
+    "repo": "https://github.com/SantiagoCode/Todo-ReactApp",
+    "imageRef": "/image/todoreactapp.jpg",
+    "secondImageRef": "/image/todoreactapp-1.jpg",
+    "ListOfImages": [ ],
+    "tech": [ "02", "06", "07" ],
+    "date": "December - 2023"
+  },
+  {
+    "id": "createtxt",
+    "title": "CreateTXT",
+    "short_description": "Console application to create and read files",
+    "description": "This is the project description.",
+    "page": "/portfolio/createtxt",
+    "repo": "https://github.com/SantiagoCode/CreateTxt",
+    "imageRef": "/image/CreateTXT.jpg",
+    "ListOfImages": [ ],
+    "tech": [ "11", "12" ],
+    "date": "January - 2024"
+  }
+]
