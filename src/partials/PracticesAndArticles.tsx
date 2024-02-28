@@ -24,7 +24,7 @@ const PracticesAndArticles = () => {
 
   return (
     <FullSection id='Portfolio'>
-      <h1 className="text-5xl font-black mb-2">Practices And Articles</h1>
+      <h1 className="mb-2 text-5xl font-black">Practices And Articles</h1>
       <Cards />
     </FullSection>
   )
@@ -34,7 +34,7 @@ const Cards = () => {
   const SkillsKeys = Object.keys(SkillsData)
 
   return (
-    <div className='grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full'>
+    <div className='grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4' data-scroll-section>
       {data.map((project, projectKey) => {
         
       const listOfSkills = project.tech.reduce((accumulator: Skill[], currentValue: string) => {
@@ -46,7 +46,7 @@ const Cards = () => {
 
       return (
         <CardContainer className="inter-var" key={projectKey}>
-          <CardBody className="bg-gradient-to-br from-neutral-900 to-red-800 relative group/card w-auto h-full rounded-xl p-6 border flex flex-col justify-between">
+          <CardBody className="group/card relative flex h-full w-auto flex-col justify-between rounded-xl border bg-gradient-to-br from-neutral-900 to-red-800 p-6">
             <div className="">
               <CardItem
                 translateZ="50"
@@ -58,31 +58,31 @@ const Cards = () => {
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-sm max-w-sm mt-2"
+                className="mt-2 max-w-sm text-sm"
                 key={`${projectKey}-description`}
               >
                 {project.short_description}
               </CardItem>
             </div>
             <div className="">
-              <CardItem translateZ="100" className="w-full mt-4"
+              <CardItem translateZ="100" className="mt-4 w-full"
                 key={`${projectKey}-image`}>
                   <Link href={`${project.page}`}>
                     <Image
                       src={project.imageRef}
                       height="1000"
                       width="1000"
-                      className="h-50 w-full object-cover rounded-xl xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300"
+                      className="h-50 w-full rounded-xl object-cover transition-all duration-300 xl:hover:shadow-lg xl:hover:shadow-neutral-500"
                       alt={project.title}
                     />
                   </Link>
               </CardItem>
             </div>
-            <ul className='flex justify-between flex-wrap pt-3'>
+            <ul className='flex flex-wrap justify-between pt-3'>
               {listOfSkills.map((obj: Skill, index: number) => (
                 <CardItem
                   translateZ={40}
-                  className="px-2 rounded-xs"
+                  className="rounded-xs px-2"
                   key={`${index}-stack`}
                 >
                   <Tag key={index} small={true} url={obj.url} bgColor={obj.bgColor} txtColor={obj.textColor}>

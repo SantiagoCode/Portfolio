@@ -7,13 +7,13 @@ const Navigation = () => {
   const links = [
     ['About Me', '#AboutMe'],
     ['My Portfolio', '#Portfolio'],
-    ['Contact Me', '#Contact']
+    ['Contact Me', '#Footer']
   ]
 
   const navItemStyles = 'list-none capitalize transition-all ml-3 md:ml-6 font-black'
 
   return (
-    <nav className='flex justify-center mt-5 absolute w-full z-40'>
+    <nav className='absolute z-40 mt-5 flex w-full justify-center'>
       <li className={`${navItemStyles} xl:hover:scale-105 transition-all ease-in hover:text-red-600`}>
         <Link className='flex' href='/'>
           <Icon.Home size={24} className='xl:hidden'></Icon.Home>

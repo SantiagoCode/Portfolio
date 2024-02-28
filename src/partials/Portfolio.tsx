@@ -5,6 +5,7 @@ import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
 import Skills from './../../public/moks/skills.json';
 import Projects from './../../public/moks/portfolio_projects.json';
+import { useParallax } from 'react-scroll-parallax';
 
 type Skill = {
   name: string;
@@ -44,36 +45,40 @@ const ProjectCard = () => {
         return accumulator;
       }, []);
 
-      return (
-            <Link href={project.page} className='group relative mx-auto aspect-video max-h-[80vh] w-full max-w-[80vw] overflow-hidden rounded-xl border-l-2 border-red-700 transition-all duration-300'>
-              <Image
-                src={project.imageRef}
-                height="2000"
-                width="2000"
-                className="project-image absolute h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
-                alt={project.title}
-              />
-              <div className="pointer-events-none absolute z-10 h-full w-full bg-gradient-to-b from-black to-transparent opacity-100 transition-all duration-300 group-hover:opacity-0"></div>
-              <div className="pointer-events-none absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent opacity-100 transition-all duration-300 group-hover:opacity-0"></div>
+      const { ref } = useParallax<HTMLDivElement>({
+        scale: [0.8, 1, 'easeInQuad'],
+      });
 
-              <div className="content pointer-events-none relative z-20 mx-auto flex h-full flex-col justify-between px-4 py-5 transition-all duration-300 xl:px-6 xl:py-8">
-                <h1 className="project-title text-2xl font-black transition-all duration-300 group-hover:text-red-700 xl:text-9xl">
-                  {project.title}
-                </h1>
-                <div className="transition-all duration-300 group-hover:hidden">
-                  <p className="project-title max-w-[70ch] font-black">{project.description}</p>
-                  <ul className='flex flex-wrap pt-3'>
-                    {listOfSkills.map((obj: Skill, index: number) => (
-                      <div className="mr-4">
-                        <Tag key={index} small={true} url={obj.url} bgColor={obj.bgColor} txtColor={obj.textColor}>
-                          {obj.name}
-                        </Tag>
-                      </div>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </Link>
+      return (
+        <div className='group relative mx-auto aspect-video max-h-[80vh] w-full max-w-[80vw] overflow-hidden rounded-xl border-l-2 border-red-700 transition-all duration-300' ref={ref} key={projectKey} data-scroll-section>
+          <Image
+            src={project.imageRef}
+            height="2000"
+            width="2000"
+            className="project-image absolute h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
+            alt={project.title}
+          />
+          <div className="pointer-events-none absolute z-10 h-full w-full bg-gradient-to-b from-black to-transparent opacity-100 transition-all duration-300 group-hover:opacity-0"></div>
+          <div className="pointer-events-none absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent opacity-100 transition-all duration-300 group-hover:opacity-0"></div>
+
+          <div className="content pointer-events-none relative z-20 mx-auto flex h-full flex-col justify-between px-4 py-5 transition-all duration-300 xl:px-6 xl:py-8">
+            <h1 className="project-title text-2xl font-black transition-all duration-300 group-hover:text-red-700 xl:text-9xl">
+              {project.title}
+            </h1>
+            <div className="transition-all duration-300 group-hover:hidden">
+              <p className="project-title max-w-[70ch] font-black">{project.description}</p>
+              <ul className='flex flex-wrap pt-3'>
+                {listOfSkills.map((obj: Skill, index: number) => (
+                  <div className="mr-4" key={index}>
+                    <Tag key={index} small={true} url={obj.url} bgColor={obj.bgColor} txtColor={obj.textColor}>
+                      {obj.name}
+                    </Tag>
+                  </div>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       )
       })}
     </div>

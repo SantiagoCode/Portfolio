@@ -1,3 +1,5 @@
+"use client" 
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -5,7 +7,7 @@ import * as Icon from 'react-feather'
 
 const Footer = () => {
   return (
-    <div className='relative flex w-full flex-col justify-between overflow-hidden'>
+    <div id='Footer' className='relative flex w-full flex-col justify-between overflow-hidden'>
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Footer BG"
@@ -36,6 +38,7 @@ const NetworkLink = ({ children, linkDirection, network }: { children: React.Rea
 }
 
 function ContactSection() {
+
   return (
     <section className="flex min-h-[80vh] w-full flex-col items-center justify-center py-6 md:py-12 lg:py-16">
       <div className="container mx-auto flex aspect-square w-[50vw] min-w-[300px] max-w-[500px] flex-col items-center justify-center gap-4 rounded-3xl px-8 py-4 text-center shadow-md shadow-red-700 backdrop-blur-md md:px-6 xl:aspect-video">
@@ -44,6 +47,7 @@ function ContactSection() {
           <p className="md:text-xl/relaxed">Reach out to start a conversation.</p>
         </div>
         <div className="grid grid-cols-2 items-center justify-center gap-4 md:gap-8">
+          {/* Aquí se utiliza la referencia de parallaxRef */}
           <NetworkLink linkDirection='https://www.linkedin.com/in/santiagocode/' network='LinkedIn' >
             <Icon.Linkedin size={26} />
           </NetworkLink>
@@ -61,6 +65,7 @@ function ContactSection() {
     </section>
   )
 }
+
 
 const Copyright = () => {
   return (

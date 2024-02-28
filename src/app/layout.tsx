@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import './globals.css'
 
 const Jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${Jakarta.className}`}>
         <Navigation />
-        <div className="flex flex-col justify-between min-h-screen bg-black">
+        <div className="flex min-h-screen flex-col justify-between bg-black">
           {children}
           <Footer />
         </div>
