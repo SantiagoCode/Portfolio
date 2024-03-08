@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import StormTrooper3D from '@/components/ui/StormTrooper3D';
 
 const Hero = () => {
   const logoTechnologies = [
@@ -16,15 +17,16 @@ const Hero = () => {
     <ParallaxProvider>
       <Parallax speed={-20}>
         <div id='Hero' className='relative mb-12 flex min-h-screen flex-col items-center justify-center overflow-hidden px-4'>
-          <Image
+          {/* <Image
             src={`/image/stormtrooper.jpg`}
             alt="Hero BG"
             className="absolute h-full w-full object-cover"
             width={2900}
             height={1200}
             priority
-          />
-          <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent"></div>
+          /> */}
+          <StormTrooper3D /> 
+          {/* <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent"></div> */}
           <h1 className='z-20 hidden lg:block'>
             <TextGenerateEffect words={"Santiago Salazar - FrontEnd Developer"} className='mb-4 text-3xl font-black lg:text-center lg:text-5xl 2xl:text-6xl' />
           </h1>
