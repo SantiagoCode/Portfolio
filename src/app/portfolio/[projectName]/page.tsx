@@ -82,7 +82,7 @@ const Header = ({ project }: { project: any }) => {
           </div>
 
           <div className="content col-span-5 flex flex-col justify-center xl:col-span-3">
-            <h1 className="title mb-6 text-6xl font-black">
+            <h1 className="title mb-6 text-7xl font-black">
               {title}
             </h1>
             <p className="description text-ms lg:text-base">
