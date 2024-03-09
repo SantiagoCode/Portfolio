@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${Jakarta.className}`}>
         <Navigation />
-        <div className="flex flex-col justify-between min-h-screen bg-black">
+        <div className="flex min-h-screen flex-col justify-between bg-black">
           {children}
           <Footer />
         </div>

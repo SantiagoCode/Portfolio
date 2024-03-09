@@ -5,17 +5,17 @@ import * as Icon from 'react-feather'
 
 const Footer = () => {
   return (
-    <div className='relative overflow-hidden flex flex-col justify-between w-full'>
+    <div className='relative flex w-full flex-col justify-between overflow-hidden'>
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Footer BG"
-        className="object-cover absolute min-h-screen w-full"
+        className="absolute min-h-screen w-full object-cover"
         width={2900}
         height={1200}
         priority
       />
-      <div className="absolute z-10 w-full h-full bg-gradient-to-b from-black to-transparent"></div>
-      <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
+      <div className="absolute z-10 h-full w-full bg-gradient-to-b from-black to-transparent"></div>
+      <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent"></div>
       <div className="z-20 flex flex-col justify-between">
         <ContactSection />
         <Copyright />
@@ -26,8 +26,8 @@ const Footer = () => {
 
 const NetworkLink = ({ children, linkDirection, network }: { children: React.ReactNode, linkDirection: string, network: string }) => {
   return (
-    <div className="flex items-center justify-center space-x-2 xl:hover:scale-105 transition-all ease-in hover:text-red-700">
-      <a className='flex items-center flex-col' href={linkDirection}>
+    <div className="flex items-center justify-center space-x-2 transition-all ease-in hover:text-red-700 xl:hover:scale-105">
+      <a className='flex flex-col items-center' href={linkDirection}>
         {children}
         <span className="text-sm font-medium">{network}</span>
       </a>
@@ -37,8 +37,8 @@ const NetworkLink = ({ children, linkDirection, network }: { children: React.Rea
 
 function ContactSection() {
   return (
-    <section className="w-full py-6 md:py-12 lg:py-16 min-h-[80vh] flex flex-col justify-center items-center">
-      <div className="container min-w-[300px] w-[50vw] max-w-[500px] flex flex-col items-center justify-center gap-4 text-center md:px-6 mx-auto backdrop-blur-md py-4 px-8 shadow-md shadow-red-700 rounded-3xl aspect-square xl:aspect-video">
+    <section className="flex min-h-[80vh] w-full flex-col items-center justify-center py-6 md:py-12 lg:py-16">
+      <div className="container mx-auto flex aspect-square w-[50vw] min-w-[300px] max-w-[500px] flex-col items-center justify-center gap-4 rounded-xl bg-[rgb(255,255,255,0.1)] px-8 py-4 text-center shadow-md backdrop-blur-lg transition-all hover:border md:px-6 xl:aspect-video">
         <div className="space-y-2">
           <h2 className="text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl">Get in touch</h2>
           <p className="md:text-xl/relaxed">Reach out to start a conversation.</p>
@@ -64,9 +64,9 @@ function ContactSection() {
 
 const Copyright = () => {
   return (
-    <div className='flex flex-col text-center justify-center py-3'>
+    <div className='flex flex-col justify-center py-3 text-center'>
       <Link href={'https://github.com/SantiagoCode/Portfolio'}
-            className='text-ms mb-1 text-red-700 font-black xl:hover:scale-105 transition-all ease-in'>
+            className='text-ms mb-1 font-black text-red-700 transition-all ease-in xl:hover:scale-105'>
         Take a look at the code of this portfolio on my GitHub. 👋
       </Link>
       <div className='text-xs'>Copyright © 2024 - Santiago Salazar Dev</div>

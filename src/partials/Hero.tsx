@@ -1,46 +1,38 @@
 import React from 'react'
 import Image from 'next/image'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+import FixedBackground from '@/components/FixedBackground'
 
 const Hero = () => {
   const logoTechnologies = [
-    ['Sass', 'png', 34, 30],
+    ['sass', 'svg', 34, 30],
     ['tailwindBRAND', 'png', 45, 20],
-    ['TypeScript', 'png', 30, 30],
-    ['React', 'png', 32, 100], 
-    ['Next', 'svg', 100, 30]
+    ['JavaScript', 'png', 30, 30],
+    ['react', 'svg', 32, 100], 
+    ['asd', 'svg', 32, 100]
   ]
 
   return (
-    <div id='Hero' className='relative overflow-hidden px-4 min-h-screen flex flex-col items-center justify-center mb-12'>
-      <Image
-        src={`/image/stormtrooper.jpg`}
-        alt="Hero BG"
-        className="h-full object-cover absolute w-full"
-        width={2900}
-        height={1200}
-        priority
-      />
-      <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent"></div>
-      <h1 className='z-20 hidden lg:block'>
-        <TextGenerateEffect words={"Santiago Salazar - FrontEnd Developer"} className='2xl:text-6xl lg:text-5xl text-3xl font-black mb-4 lg:text-center' />
+    <div id='Hero' className='relative mb-12 flex min-h-screen flex-col items-center justify-center overflow-hidden px-4'>
+      <FixedBackground />
+
+      <h1 className='z-20 mb-7'>
+        <TextGenerateEffect words={"Santiago Salazar"} className='mb-0 text-center text-7xl font-black' />
+        <TextGenerateEffect words={"FrontEnd Developer"} className='text-center text-3xl font-[300]' />
       </h1>
-      <h1 className='z-20 lg:hidden mb-5'>
-        <TextGenerateEffect words={"Santiago Salazar"} className='text-5xl font-black text-center' />
-        <TextGenerateEffect words={"FrontEnd Developer"} className='text-5xl font-black text-center' />
-      </h1>
-      <ul className='z-20 flex backdrop-blur-md py-4 px-8 shadow-md shadow-red-700 rounded-full' data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="900">
+      
+      <ul className='z-20 flex rounded-full border bg-[rgb(255,255,255,0.1)] px-8 py-2 backdrop-blur-lg' data-aos="zoom-in-up" data-aos-delay="900" data-aos-duration="900">
         {logoTechnologies.map(([text, ext, w, h], index) => (
           <li key={index} className='flex items-center'>
             <Image
               src={`/image/${text}.${ext}`}
               alt="next Logo"
-              className="xl:hover:scale-105 transition-all"
+              className="rounded transition-all xl:hover:scale-105"
               width={Number(w)}
               height={Number(h)}
               priority
             />
-            {( index < logoTechnologies.length - 1 ) && <div className='bg-white w-px h-4 mx-4'></div>  }
+            {( index < logoTechnologies.length - 1 ) && <div className='mx-4 h-4 w-px bg-white'></div>  }
           </li>
         ))}
       </ul>

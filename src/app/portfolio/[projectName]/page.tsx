@@ -54,20 +54,20 @@ const Header = ({ project }: { project: any }) => {
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Hero BG"
-        className="h-full object-cover absolute"
+        className="absolute h-full object-cover"
         width={2900}
         height={1200}
         priority
       />
-      <div className="absolute z-10 w-full h-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg"></div>
+      <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg"></div>
       <FullSection>
-        <header className='grid gap-6 xl:gap-20 grid-cols-5 mb-20 xl:mb-0 z-20'>
-          <div className="xl:col-span-2 col-span-5 mt-20 xl:mt-0 relative">
+        <header className='z-20 mb-20 grid grid-cols-5 gap-6 xl:mb-0 xl:gap-20'>
+          <div className="relative col-span-5 mt-20 xl:col-span-2 xl:mt-0">
             <Image
               src={imageRef}
               height="1000"
               width="1000"
-              className="object-cover rounded-xl my-2 shadow-md xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300 ease-in"
+              className="my-2 rounded-xl object-cover shadow-md transition-all duration-300 ease-in xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500"
               alt={'OnceOnce'}
             />
             {secondImageRef &&
@@ -75,24 +75,24 @@ const Header = ({ project }: { project: any }) => {
                 src={secondImageRef || imageRef}
                 height="1000"
                 width="1000"
-                className="object-cover rounded-xl my-2 shadow-md xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300 ease-in"
+                className="my-2 rounded-xl object-cover shadow-md transition-all duration-300 ease-in xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500"
                 alt={'OnceOnce'}
               />
             }
           </div>
 
-          <div className="content xl:col-span-3 col-span-5 flex flex-col justify-center">
-            <h1 className="title text-6xl font-black mb-6">
+          <div className="content col-span-5 flex flex-col justify-center xl:col-span-3">
+            <h1 className="title mb-6 text-6xl font-black">
               {title}
             </h1>
             <p className="description text-ms lg:text-base">
               {description}
             </p>
-            <div className="flex my-4">
-              {url && <Link href={url} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
-              {repo && <Link href={repo} className='flex mr-4 xl:hover:scale-105 hover:text-red-700 transition-all ease-in'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+            <div className="my-4 flex">
+              {url && <Link href={url} className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+              {repo && <Link href={repo} className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
             </div>
-            <div className="flex xl:flex-row flex-col justify-between my-5">
+            <div className="my-5 flex flex-col justify-between xl:flex-row">
               <ul className='flex flex-wrap'>
                 {technologies.map((tool: any, index: number) => (
                   <Tag key={index} url={tool.url} bgColor={tool.bgColor} txtColor={tool.textColor}>
@@ -100,7 +100,7 @@ const Header = ({ project }: { project: any }) => {
                   </Tag>
                 ))}
               </ul>
-              <p className="font-black text-xl">
+              <p className="text-xl font-black">
                 {date}
               </p>
             </div>

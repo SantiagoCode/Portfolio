@@ -24,8 +24,8 @@ const Portfolio = () => {
 
   return (
     <FullSection id='Portfolio'>
-      <h1 className="text-5xl font-black mb-2">Portfolio</h1>
-      <p className='text-sm mb-10 w-2/3 text-center'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="text-red-700 font-black">I am currently developing a FullStack profile.</span></p>
+      <h1 className="mb-2 text-5xl font-black">Portfolio</h1>
+      <p className='mb-10 w-2/3 text-center text-sm'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="font-black text-red-700">I am currently developing a FullStack profile.</span></p>
       <ProjectCard />
     </FullSection>
   )
@@ -35,7 +35,7 @@ const ProjectCard = () => {
   const SkillsKeys = Object.keys(SkillsData)
 
   return (
-    <div className='grid gap-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full'>
+    <div className='grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
       {Projects.map((project, projectKey) => {
         
       const listOfSkills = project.tech.reduce((accumulator: Skill[], currentValue: string) => {
@@ -46,8 +46,8 @@ const ProjectCard = () => {
       }, []);
 
       return (
-        <CardContainer className="inter-var" key={projectKey}>
-          <CardBody className="bg-gradient-to-br from-neutral-900 to-red-800 relative group/card w-auto h-full rounded-xl p-6 border flex flex-col justify-between">
+        <CardContainer className="inter-var before:absolute before:h-full before:w-full before:rounded-xl before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:content-['']" key={projectKey}>
+          <CardBody className="group/card relative flex h-full w-auto flex-col justify-between rounded-xl p-6">
             <div className="">
               <CardItem
                 translateZ="50"
@@ -59,31 +59,31 @@ const ProjectCard = () => {
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-sm max-w-sm mt-2"
+                className="mt-2 max-w-sm text-sm"
                 key={`${projectKey}-description`}
               >
                 {project.short_description}
               </CardItem>
             </div>
             <div className="">
-              <CardItem translateZ="100" className="w-full mt-4"
+              <CardItem translateZ="100" className="mt-4 w-full"
                 key={`${projectKey}-image`}>
                   <Link href={`${project.page}`}>
                     <Image
                       src={project.imageRef}
                       height="1000"
                       width="1000"
-                      className="h-50 w-full object-cover rounded-xl xl:hover:shadow-lg xl:hover:shadow-neutral-500 transition-all duration-300"
+                      className="h-50 w-full rounded-xl object-cover transition-all duration-300"
                       alt={project.title}
                     />
                   </Link>
               </CardItem>
             </div>
-            <ul className='flex justify-between flex-wrap pt-3'>
+            <ul className='flex flex-wrap justify-between pt-3'>
               {listOfSkills.map((obj: Skill, index: number) => (
                 <CardItem
                   translateZ={40}
-                  className="px-2 rounded-xs"
+                  className="rounded-xs px-2"
                   key={`${index}-stack`}
                 >
                   <Tag key={index} small={true} url={obj.url} bgColor={obj.bgColor} txtColor={obj.textColor}>
