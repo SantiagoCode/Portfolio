@@ -19,7 +19,7 @@ const Hero = () => {
 
       <h1 className='z-20 mb-7'>
         <TextGenerateEffect words={"Santiago Salazar"} className='mb-0 text-center text-7xl font-black' />
-        <TextGenerateEffect words={"FrontEnd Developer"} className='text-center text-3xl font-[300]' />
+        <TextGenerateEffect words={"FrontEnd Developer"} className='text-center text-3xl font-[200]' />
       </h1>
 
       <CardContainer className="inter-var flex before:absolute before:h-full before:w-full before:rounded-full before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:content-['']">
