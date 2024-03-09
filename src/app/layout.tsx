@@ -18,7 +18,7 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={`${Jakarta.className}`}>
+      <body className={`${Jakarta.className} font-[200]`}>
         <Navigation />
         <div className="flex min-h-screen flex-col justify-between bg-black">
           {children}
