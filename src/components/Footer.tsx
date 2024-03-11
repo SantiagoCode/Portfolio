@@ -28,7 +28,7 @@ const Footer = () => {
 const NetworkLink = ({ children, linkDirection, network }: { children: React.ReactNode, linkDirection: string, network: string }) => {
   return (
     <div className="flex items-center justify-center space-x-2 transition-all hover:scale-105 hover:text-red-700">
-      <a className='flex flex-col items-center' href={linkDirection}>
+      <a className='flex flex-col items-center' href={linkDirection} target="_blank">
         {children}
         <span className="text-sm font-medium">{network}</span>
       </a>
