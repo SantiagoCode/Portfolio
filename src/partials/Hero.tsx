@@ -17,7 +17,7 @@ const Hero = () => {
   ]
   
   useEffect(() => {
-    window.addEventListener("load", () => setTimeout(removeBlur, 300))
+    setTimeout(removeBlur, 300)
   }, [])
 
   return (

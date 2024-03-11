@@ -27,7 +27,7 @@ const SkillsData: SkillsType = Skills[0];
 const Page = ({ params }: { params: any }) => {
 
   useEffect(() => {
-    window.addEventListener("load", () => setTimeout(removeBlur, 300))
+    setTimeout(removeBlur, 300)
   }, [])
 
   const pageProject = Projects.find((project: any) => project.id === params.projectName);
