@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -6,6 +8,7 @@ import FullSection from '@/components/FullSection'
 import Skills from './../../public/moks/skills.json';
 import Projects from './../../public/moks/portfolio-projects.json';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import opacityOnClick from '@/utils/opacityOnClick'
 
 type Skill = {
   name: string;
@@ -68,7 +71,7 @@ const ProjectCard = () => {
             <div className="">
               <CardItem translateZ="100" className="mt-4 w-full"
                 key={`${projectKey}-image`}>
-                  <Link href={`${project.page}`}>
+                  <Link href={`${project.page}`} onClick={() => opacityOnClick()}>
                     <Image
                       src={project.imageRef}
                       height="1000"
