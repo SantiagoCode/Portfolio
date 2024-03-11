@@ -16,23 +16,15 @@ const AboutSantiago = () => {
       <div className="santiago_container grid-cols-5 items-center gap-4 xl:grid">
 
         <div className="santiago_picture relative col-span-2 mb-12 w-full xl:mb-0">
-          <CardContainer>
-            <CardBody>
-              <CardItem
-                translateZ={40}>
-                <Image
-                  src={`/image/santiago-pic-1.png`}
-                  alt="Santiago Picture"
-                  className="rounded-xl"
-                  width={400}
-                  height={800}
-                  priority
-                />
-              </CardItem>
-            </CardBody>
-          </CardContainer>
+          <Image
+            src={`/image/santiago-pic-1.png`}
+            alt="Santiago Picture"
+            className="rounded-xl"
+            width={400}
+            height={800}
+            priority
+          />
         </div>
-
 
         <div className="santiago_content col-span-3 xl:ml-4">
           <h1 className="title mb-6 text-5xl font-[200]">
