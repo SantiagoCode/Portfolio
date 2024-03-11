@@ -68,7 +68,7 @@ const ProjectCard = () => {
             <div className="">
               <CardItem translateZ="100" className="mt-4 w-full"
                 key={`${projectKey}-image`}>
-                  <Link href={`${project.page}`}>
+                  <Link href={`${project.page}`} target="_blank">
                     <Image
                       src={project.imageRef}
                       height="1000"

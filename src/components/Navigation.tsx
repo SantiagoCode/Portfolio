@@ -31,12 +31,12 @@ const Navigation = () => {
 
         <div className="flex">
           <li className={`${navItemStyles} xl:hover:scale-105 transition-all ease-in hover:text-red-600`}>
-            <Link className='hover:text-red-600' href='https://www.github.com/SantiagoCode'>
+            <Link className='hover:text-red-600' href='https://www.github.com/SantiagoCode' target="_blank">
               <Icon.GitHub size={24} />
             </Link>
           </li>
           <li className={`${navItemStyles} xl:hover:scale-105 transition-all ease-in hover:text-red-600`}>
-            <Link className='hover:text-red-600' href='https://www.linkedin.com/in/santiagocode/'>
+            <Link className='hover:text-red-600' href='https://www.linkedin.com/in/santiagocode/' target="_blank">
               <Icon.Linkedin size={24} />
             </Link>
           </li>

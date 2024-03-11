@@ -77,7 +77,7 @@ function ContactSection() {
 const Copyright = () => {
   return (
     <div className='flex flex-col justify-center py-3 text-center'>
-      <Link href={'https://github.com/SantiagoCode/Portfolio'}
+      <Link href={'https://github.com/SantiagoCode/Portfolio'} target="_blank"
             className='text-ms mb-1 font-black text-red-700 transition-all ease-in xl:hover:scale-105'>
         Take a look at the code of this portfolio on my GitHub. 👋
       </Link>

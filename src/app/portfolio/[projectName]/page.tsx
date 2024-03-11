@@ -60,6 +60,7 @@ const Header = ({ project }: { project: any }) => {
         priority
       />
       <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg"></div>
+
       <FullSection>
         <header className='z-20 mb-20 grid grid-cols-5 gap-6 xl:mb-0 xl:gap-20'>
           <div className="relative col-span-5 mt-20 xl:col-span-2 xl:mt-0">
@@ -67,7 +68,7 @@ const Header = ({ project }: { project: any }) => {
               src={imageRef}
               height="1000"
               width="1000"
-              className="my-2 rounded-xl object-cover shadow-md transition-all duration-300 ease-in xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500"
+              className="my-2 rounded-xl border object-cover transition-all duration-300 ease-in xl:hover:scale-105"
               alt={'OnceOnce'}
             />
             {secondImageRef &&
@@ -75,7 +76,7 @@ const Header = ({ project }: { project: any }) => {
                 src={secondImageRef || imageRef}
                 height="1000"
                 width="1000"
-                className="my-2 rounded-xl object-cover shadow-md transition-all duration-300 ease-in xl:hover:scale-105 xl:hover:shadow-lg xl:hover:shadow-neutral-500"
+                className="my-2 rounded-xl border object-cover transition-all duration-300 ease-in xl:hover:scale-105"
                 alt={'OnceOnce'}
               />
             }
@@ -89,9 +90,10 @@ const Header = ({ project }: { project: any }) => {
               {description}
             </p>
             <div className="my-4 flex">
-              {url && <Link href={url} className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
-              {repo && <Link href={repo} className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+              {url && <Link href={url} target="_blank" className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+              {repo && <Link href={repo} target="_blank" className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
             </div>
+            
             <div className="my-5 flex flex-col justify-between xl:flex-row">
               <ul className='flex flex-wrap'>
                 {technologies.map((tool: any, index: number) => (
