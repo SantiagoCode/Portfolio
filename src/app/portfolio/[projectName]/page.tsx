@@ -6,8 +6,8 @@ import Link from 'next/link'
 import * as Icon from 'react-feather';
 import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
-import Skills from './../../../../public/moks/skills.json';
-import Projects from './../../../../public/moks/portfolio-projects.json';
+import Skills from '../../../../public/moks/skills.json';
+import Projects from '../../../../public/moks/portfolio-projects.json';
 import Gallery from '@/components/Gallery';
 import { removeBlur } from "@/utils/smooth";
 
@@ -24,7 +24,7 @@ type SkillsType = {
 
 const SkillsData: SkillsType = Skills[0];
 
-const page = ({ params }: { params: any }) => {
+const Page = ({ params }: { params: any }) => {
 
   useEffect(() => {
     setTimeout(removeBlur, 300)
@@ -62,12 +62,12 @@ const Header = ({ project }: { project: any }) => {
       <Image
         src={`/image/stormtrooper.jpg`}
         alt="Hero BG"
-        className="absolute h-full object-cover"
+        className="fixed h-full object-cover"
         width={2900}
         height={1200}
         priority
       />
-      <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg transition-all duration-300"></div>
+      <div className="fixed z-10 h-full w-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg transition-all duration-300"></div>
 
       <FullSection id='Project'>
         <header className='z-20 mb-20 grid grid-cols-5 gap-6 xl:mb-0 xl:gap-20'>
@@ -121,4 +121,4 @@ const Header = ({ project }: { project: any }) => {
   )
 }
 
-export default page
+export default Page

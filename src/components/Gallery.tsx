@@ -5,7 +5,7 @@ const Gallery = ({ project }: { project: any }) => {
   const { ListOfImages }: any = project;
 
   return (
-    <div id='Gallery' className='container mx-auto mb-12 px-4 opacity-0 transition-all duration-500'>
+    <div id='Gallery' className='container z-10 mx-auto mb-12 px-4 opacity-0 transition-all duration-500'>
       <h1 className="mb-4 text-5xl font-black">Gallery</h1>
       <div className="grid gap-4 lg:grid-cols-2 2xl:grid-cols-3">
         {ListOfImages.map((image: string, index: number) => (
