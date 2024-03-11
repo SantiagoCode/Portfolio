@@ -5,8 +5,8 @@ import * as Icon from 'react-feather'
 
 const SantiagoExperience = () => {
   return (
-    <FullSection>
-      <div className='experience_container grid-cols-5 items-center gap-4 xl:grid'>
+    <FullSection id='SantiagoExperience'>
+      <div className='grid-cols-5 items-center gap-4 xl:grid'>
         <ExperienceResume />
         <TimeLine />
       </div>
