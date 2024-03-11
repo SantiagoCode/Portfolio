@@ -1,24 +1,28 @@
-const idSections = [ 'Hero', 'Portfolio', 'SantiagoExperience', 'AboutMe', 'Project' ]
+"use client"
 
-const smooth = {
+const idSections = [ 'Navigation', 'Hero_Stack', 'AboutMe', 'Portfolio', 'SantiagoExperience', 'Contact', 'Project', 'Gallery' ]
 
-  off: () => {
-    setTimeout(() => {
-      idSections.map((id) => {
-        const el = document.querySelector(`#${id}`)
-        el?.classList.remove('opacity-0')
-      })
-    }, 300)
-  },
+const removeBlur = () => {
+  const el = document.querySelector('.HomeBackground')
+  el?.classList.remove('blur');
 
-  on: () => {
-    setTimeout(() => {
-      idSections.map((id) => {
-        const el = document.querySelector(`#${id}`)
-        el?.classList.add('opacity-0')
-      })
-    }, 300)
-  }
+  idSections.map((id) => {
+    const el = document.querySelector(`#${id}`)
+    el?.classList.remove('opacity-0')
+  })
+};
+
+const addBlur = () => {
+  const el = document.querySelector('.HomeBackground')
+  el?.classList.add('blur');
+
+  idSections.map((id) => {
+    const el = document.querySelector(`#${id}`)
+    el?.classList.add('opacity-0')
+  })
+};
+
+export {
+  addBlur,
+  removeBlur
 }
-
-export default smooth

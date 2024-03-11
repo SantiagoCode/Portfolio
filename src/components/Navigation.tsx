@@ -13,7 +13,7 @@ const Navigation = () => {
   const navItemStyles = 'list-none capitalize transition-all ml-3 md:ml-6 font-black'
 
   return (
-    <div className='fixed z-40 w-full'>
+    <div id='Navigation' className='fixed z-40 w-full opacity-0 transition-all delay-500 duration-500'>
       <nav className='mx-auto mt-5 flex w-2/3 justify-between rounded-full border bg-[rgb(255,255,255,0.1)] px-8 py-4 backdrop-blur-lg'>
         <div className="flex">
           <li className={`${navItemStyles} xl:hover:scale-105 transition-all ease-in hover:text-red-600`}>

@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import * as Icon from 'react-feather';
@@ -7,6 +9,7 @@ import FullSection from '@/components/FullSection'
 import Skills from './../../../../public/moks/skills.json';
 import Projects from './../../../../public/moks/portfolio-projects.json';
 import Gallery from '@/components/Gallery';
+import { removeBlur } from "@/utils/smooth";
 
 type Skill = {
   name: string;
@@ -22,6 +25,11 @@ type SkillsType = {
 const SkillsData: SkillsType = Skills[0];
 
 const page = ({ params }: { params: any }) => {
+
+  useEffect(() => {
+    setTimeout(removeBlur, 300)
+  }, [])
+
   const pageProject = Projects.find((project: any) => project.id === params.projectName);
   if (!pageProject) return <div>Proyecto no encontrado</div> 
 
@@ -59,9 +67,9 @@ const Header = ({ project }: { project: any }) => {
         height={1200}
         priority
       />
-      <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg"></div>
+      <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent backdrop-blur-lg transition-all duration-300"></div>
 
-      <FullSection>
+      <FullSection id='Project'>
         <header className='z-20 mb-20 grid grid-cols-5 gap-6 xl:mb-0 xl:gap-20'>
           <div className="relative col-span-5 mt-20 xl:col-span-2 xl:mt-0">
             <Image

@@ -6,16 +6,16 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 const Footer = () => {
   return (
-    <div className='relative flex w-full flex-col justify-between overflow-hidden'>
-      <Image
+    <div id='Footer' className='relative flex w-full flex-col justify-between overflow-hidden'>
+      {/* <Image
         src={`/image/stormtrooper.jpg`}
         alt="Footer BG"
         className="absolute min-h-screen w-full object-cover"
         width={2900}
         height={1200}
         priority
-      />
-      <div className="absolute z-10 h-full w-full bg-gradient-to-b from-black to-transparent"></div>
+      /> */}
+      {/* <div className="absolute z-10 h-full w-full bg-gradient-to-b from-black to-transparent"></div> */}
       <div className="absolute z-10 h-full w-full bg-gradient-to-t from-black to-transparent"></div>
       <div className="z-20 flex flex-col justify-between">
         <ContactSection />
@@ -38,7 +38,7 @@ const NetworkLink = ({ children, linkDirection, network }: { children: React.Rea
 
 function ContactSection() {
   return (
-    <section className="flex min-h-[80vh] w-full flex-col items-center justify-center py-6 md:py-12 lg:py-16">
+    <section id='Contact' className="flex min-h-[80vh] w-full flex-col items-center justify-center py-6 opacity-0 transition-all duration-500 md:py-12 lg:py-16">
       <CardContainer>
         <CardBody>
           <CardItem

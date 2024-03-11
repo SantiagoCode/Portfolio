@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
 import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
 import Skills from './../../public/moks/skills.json';
 import Projects from './../../public/moks/portfolio-projects.json';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import RouterLink from '@/components/RouterLink'
 
 type Skill = {
   name: string;
@@ -32,6 +32,7 @@ const Portfolio = () => {
 }
 
 const ProjectCard = () => {
+
   const SkillsKeys = Object.keys(SkillsData)
 
   return (
@@ -68,7 +69,8 @@ const ProjectCard = () => {
             <div className="">
               <CardItem translateZ="100" className="mt-4 w-full"
                 key={`${projectKey}-image`}>
-                  <Link href={`${project.page}`} target="_blank">
+
+                  <RouterLink linkRef={`${project.page}`}>
                     <Image
                       src={project.imageRef}
                       height="1000"
@@ -76,7 +78,8 @@ const ProjectCard = () => {
                       className="h-50 w-full rounded-xl object-cover transition-all duration-300"
                       alt={project.title}
                     />
-                  </Link>
+                  </RouterLink>
+
               </CardItem>
             </div>
             <ul className='flex flex-wrap justify-between pt-3'>
@@ -91,7 +94,7 @@ const ProjectCard = () => {
                   </Tag>
                 </CardItem>
                 ))}
-              </ul>
+            </ul>
           </CardBody>
         </CardContainer>
       )
