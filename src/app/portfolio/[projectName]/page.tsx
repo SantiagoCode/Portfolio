@@ -6,8 +6,8 @@ import Link from 'next/link'
 import * as Icon from 'react-feather';
 import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
-import Skills from '../../../../public/moks/skills.json';
-import Projects from '../../../../public/moks/portfolio-projects.json';
+import Skills from '../../../../public/mocks/skills.json';
+import Projects from '../../../../public/mocks/portfolio-projects.json';
 import Gallery from '@/components/Gallery';
 import { removeBlur } from "@/utils/smooth";
 

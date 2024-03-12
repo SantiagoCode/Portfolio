@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Tag from '@/components/Tag'
 import FullSection from '@/components/FullSection'
-import Skills from './../../public/moks/skills.json';
-import Projects from './../../public/moks/portfolio-projects.json';
+import Skills from './../../public/mocks/skills.json';
+import Projects from './../../public/mocks/portfolio-projects.json';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import RouterLink from '@/components/RouterLink'
 
