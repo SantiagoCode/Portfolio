@@ -44,11 +44,10 @@ body {
     }
 }
 
-
-// #Hero, #AboutMe, #Portfolio, #SantiagoExperience, #Project, #Contact {
-//   opacity: 0;
-// }
-
 .HomeBackground.blur {
   filter: blur(16px);
+}
+
+.real_tag {
+  transform: translateY(-50%) !important;
 }

@@ -46,7 +46,7 @@ const Page = ({ params }: { params: any }) => {
 }
 
 const Header = ({ project }: { project: any }) => {
-  const { title, description, url, repo, imageRef, secondImageRef, tech, date }: any = project;
+  const { title, description, url, repo, imageRef, secondImageRef, tech, date, real_project }: any = project;
 
   const SkillsKeys = Object.keys(SkillsData)
 
@@ -91,8 +91,8 @@ const Header = ({ project }: { project: any }) => {
           </div>
 
           <div className="content col-span-5 flex flex-col justify-center xl:col-span-3">
-            <h1 className="title mb-6 text-7xl font-black">
-              {title}
+            <h1 className="title mb-6 flex text-7xl font-black">
+              {title} {real_project && <Icon.Star className='ml-2 text-yellow-400' size={28} />}
             </h1>
             <p className="description text-ms lg:text-base">
               {description}

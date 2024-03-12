@@ -6,6 +6,7 @@ import Skills from './../../public/mocks/skills.json';
 import Projects from './../../public/mocks/portfolio-projects.json';
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import RouterLink from '@/components/RouterLink'
+import * as Icon from 'react-feather';
 
 type Skill = {
   name: string;
@@ -49,11 +50,22 @@ const ProjectCard = () => {
       return (
         <CardContainer className="inter-var before:absolute before:h-full before:w-full before:rounded-xl before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:content-['']" key={projectKey}>
           <CardBody className="group/card relative flex h-full w-auto flex-col justify-between rounded-xl p-6">
-            <div className="">
+            {project.real_project && 
+              <CardItem
+                translateZ="100"
+                className='real_tag absolute right-2.5 top-0 z-20 rounded-full bg-yellow-400 px-4 py-2 text-sm font-bold text-yellow-900'
+                key={`${projectKey}-name-${project.real_project}`}
+              >
+                <p className='flex items-center'>
+                  Real Project <Icon.Star className='ml-2' size={18} />
+                </p>
+              </CardItem>
+            }
+            <div>
               <CardItem
                 translateZ="50"
                 className="text-xl font-black"
-                  key={`${projectKey}-name`}
+                key={`${projectKey}-name`}
               >
                 {project.title}
               </CardItem>
@@ -66,7 +78,7 @@ const ProjectCard = () => {
                 {project.short_description}
               </CardItem>
             </div>
-            <div className="">
+            <div>
               <CardItem translateZ="100" className="mt-4 w-full"
                 key={`${projectKey}-image`}>
 
