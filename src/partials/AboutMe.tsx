@@ -1,6 +1,7 @@
 import React from 'react'
 import FullSection from '@/components/FullSection'
 import Image from 'next/image'
+import DownloadCV from '@/components/DownloadCV'
 
 const AboutMe = () => {
   return (
@@ -31,19 +32,23 @@ const AboutSantiago = () => {
           </h1>
           <p>
             <span>
-              I am a <span className="font-black text-red-700">FrontEnd Developer</span> with experience in high-demand web projects,
+              I am a <span className="font-black text-red-600">FrontEnd Developer</span> with experience in high-demand web projects,
               standing out for quickly integrating into multidisciplinary teams,
-              generating positive impact with <span className="font-black text-red-700">accurate analysis and efficient solutions</span>.
+              generating positive impact with <span className="font-black text-red-600">accurate analysis and efficient solutions</span>.
             </span>
             <br/>
             <br/>
             <span>
-              I have <span className="font-black text-red-700">led successful projects</span>, facilitating communication between clients and development teams.
+              I have <span className="font-black text-red-600">led successful projects</span>, facilitating communication between clients and development teams.
               My focus is on FrontEnd development, aiming to contribute with
               simple solutions and intuitive interfaces. I am seeking a team where I can continue
               to grow professionally and contribute with passion and commitment.
             </span>
           </p>
+          <br/>
+  
+          <DownloadCV />
+
         </div>
       </div>
   )

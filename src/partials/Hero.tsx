@@ -30,7 +30,7 @@ const Hero = () => {
           <TextGenerateEffect words={"FrontEnd Developer"} className='text-center text-3xl font-[200]' />
         </h1>
 
-        <CardContainer id={'Hero_Stack'} className="inter-var flex opacity-0 transition-all delay-500 duration-500 before:absolute before:h-full before:w-full before:rounded-full before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:content-['']">
+        <CardContainer id={'Hero_Stack'} className="inter-var before:absolute before:h-full before:w-full before:rounded-full before:bg-[rgb(255,255,255,0.1)] before:hover:bg-[rgb(255,255,255,0.2)] before:transition-all before:duration-300 transition-all before:backdrop-blur-xl before:content-[''] before:border">
           <CardBody className="relative h-full w-auto px-8 py-2">
             <ul className='flex items-center'>
               {logoTechnologies.map(([text, ext, w, h], index) => (

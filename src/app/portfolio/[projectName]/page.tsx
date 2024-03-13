@@ -98,8 +98,8 @@ const Header = ({ project }: { project: any }) => {
               {description}
             </p>
             <div className="my-4 flex">
-              {url && <Link href={url} target="_blank" className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
-              {repo && <Link href={repo} target="_blank" className='mr-4 flex transition-all ease-in hover:text-red-700 xl:hover:scale-105'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+              {url && <Link href={url} target="_blank" className='mr-4 flex transition-all ease-in hover:text-red-600 xl:hover:scale-105'>Ir al sitio <Icon.ExternalLink className='ml-2' size={24} /></Link>}
+              {repo && <Link href={repo} target="_blank" className='mr-4 flex transition-all ease-in hover:text-red-600 xl:hover:scale-105'>Repo <Icon.ExternalLink className='ml-2' size={24} /></Link>}
             </div>
             
             <div className="my-5 flex flex-col justify-between xl:flex-row">

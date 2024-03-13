@@ -26,7 +26,7 @@ const Portfolio = () => {
   return (
     <FullSection id='Portfolio'>
       <h1 className="mb-2 text-5xl font-black">Portfolio</h1>
-      <p className='mb-10 w-2/3 text-center text-sm'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="font-black text-red-700">I am currently developing a FullStack profile.</span></p>
+      <p className='mb-10 w-2/3 text-center text-sm'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="font-black text-red-600">I am currently developing a FullStack profile.</span></p>
       <ProjectCard />
     </FullSection>
   )
@@ -48,12 +48,12 @@ const ProjectCard = () => {
       }, []);
 
       return (
-        <CardContainer className="inter-var before:absolute before:h-full before:w-full before:rounded-xl before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:content-['']" key={projectKey}>
+        <CardContainer className="inter-var before:absolute before:h-full before:w-full before:rounded-xl before:bg-[rgb(255,255,255,0.1)] before:hover:bg-[rgb(255,255,255,0.2)] before:transition-all before:duration-300 transition-all before:backdrop-blur-xl before:content-[''] before:border" key={projectKey}>
           <CardBody className="group/card relative flex h-full w-auto flex-col justify-between rounded-xl p-6">
             {project.real_project && 
               <CardItem
                 translateZ="100"
-                className='real_tag absolute right-2.5 top-0 z-20 rounded-full bg-yellow-400 px-4 py-2 text-sm font-bold text-yellow-900'
+                className='real_tag absolute right-2.5 top-0 z-20 flex bg-[rgb(255,255,255,0.1)] hover:bg-[rgb(255,255,255,0.2)] transition-all backdrop-blur-xl border rounded-full py-3 px-6 font-bold text-yellow-400'
                 key={`${projectKey}-name-${project.real_project}`}
               >
                 <p className='flex items-center'>

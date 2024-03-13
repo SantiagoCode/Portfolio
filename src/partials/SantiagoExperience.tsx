@@ -22,17 +22,17 @@ const ExperienceResume = () => {
       </h1>
       <p>
         <span>
-          As a <span className="font-black text-red-700">passionate FrontEnd developer</span>, I have specialized in <span className="font-black text-red-700">React.js</span>, creating <span className="font-black text-red-700">exceptional web experiences</span> with JavaScript and CSS. At <span className="font-black text-red-700">Movidagráfica™</span>, I had the opportunity to lead a small team on a high-demand project, allowing me to demonstrate my leadership skills and attention to detail.
+          As a <span className="font-black text-red-600">passionate FrontEnd developer</span>, I have specialized in <span className="font-black text-red-600">React.js</span>, creating <span className="font-black text-red-600">exceptional web experiences</span> with JavaScript and CSS. At <span className="font-black text-red-600">Movidagráfica™</span>, I had the opportunity to lead a small team on a high-demand project, allowing me to demonstrate my leadership skills and attention to detail.
         </span>
         <br/>
         <br/>
         <span>
-          My experience also includes working as a <span className="font-black text-red-700">FrontEnd Developer</span> at <span className="font-black text-red-700">Studio Salvatori</span>, where I learned the fundamentals of web development. My technical skills and experiences include: <span className="font-black text-red-700">React, NextJS, HTML, CSS and SASS, JavaScript and TypeScript, Git and GitHub, WordPress and ACF, Laravel, BootstrapCSS, BulmaCSS, and TailwindCSS</span>.
+          My experience also includes working as a <span className="font-black text-red-600">FrontEnd Developer</span> at <span className="font-black text-red-600">Studio Salvatori</span>, where I learned the fundamentals of web development. My technical skills and experiences include: <span className="font-black text-red-600">React, NextJS, HTML, CSS and SASS, JavaScript and TypeScript, Git and GitHub, WordPress and ACF, Laravel, BootstrapCSS, BulmaCSS, and TailwindCSS</span>.
         </span>
         <br/>
         <br/>
         <span>
-          In addition to my technical experience, I hold a <Link href={'https://www.efset.org/cert/xFaeXR'} target="_blank" className="font-black text-red-700">B2 level English certification</Link>, allowing me to communicate effectively in a global environment. I am excited to contribute to software development with innovative solutions, staying updated with the latest technological trends. I am ready to contribute with passion and commitment to a team where I can continue to grow professionally!
+          In addition to my technical experience, I hold a <Link href={'https://www.efset.org/cert/xFaeXR'} target="_blank" className="font-black text-red-600">B2 level English certification</Link>, allowing me to communicate effectively in a global environment. I am excited to contribute to software development with innovative solutions, staying updated with the latest technological trends. I am ready to contribute with passion and commitment to a team where I can continue to grow professionally!
         </span>
       </p>
     </div>
@@ -54,7 +54,7 @@ const Experience = ({ date, agencie, position }: { date: string, agencie: string
       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border shadow group-[.is-active]:bg-white group-[.is-active]:text-emerald-50 xl:order-1 xl:group-odd:-translate-x-1/2 xl:group-even:translate-x-1/2">
           <Icon.Check size={21} color='black' />
       </div>
-      <div className="w-[calc(100%-4rem)] rounded-xl bg-[rgb(255,255,255,0.1)] p-4 py-4 backdrop-blur-lg transition-all duration-300 hover:scale-105 xl:w-[calc(50%-2.5rem)]">
+      <div className="w-[calc(100%-4rem)] rounded-xl bg-[rgb(255,255,255,0.1)] hover:bg-[rgb(255,255,255,0.2)] p-4 py-4 backdrop-blur-lg transition-all duration-300 hover:scale-105 xl:w-[calc(50%-2.5rem)] border">
           <time className="font-caveat text-xs font-medium">
             {date}
           </time>
