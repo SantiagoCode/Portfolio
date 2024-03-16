@@ -51,3 +51,16 @@ body {
 .real_tag {
   transform: translateY(-50%) !important;
 }
+
+.radial_contrast::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: rgba(0, 0, 0, 0.2);
+  filter: blur(50px);
+}

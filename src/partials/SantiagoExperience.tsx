@@ -5,7 +5,7 @@ import * as Icon from 'react-feather'
 
 const SantiagoExperience = () => {
   return (
-    <FullSection id='SantiagoExperience'>
+    <FullSection id='SantiagoExperience' clases='radial_contrast'>
       <div className='grid-cols-5 items-center gap-4 xl:grid'>
         <ExperienceResume />
         <TimeLine />
@@ -54,7 +54,7 @@ const Experience = ({ date, agencie, position }: { date: string, agencie: string
       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border shadow group-[.is-active]:bg-white group-[.is-active]:text-emerald-50 xl:order-1 xl:group-odd:-translate-x-1/2 xl:group-even:translate-x-1/2">
           <Icon.Check size={21} color='black' />
       </div>
-      <div className="w-[calc(100%-4rem)] rounded-xl bg-[rgb(255,255,255,0.1)] hover:bg-[rgb(255,255,255,0.2)] p-4 py-4 backdrop-blur-lg transition-all duration-300 hover:scale-105 xl:w-[calc(50%-2.5rem)] border">
+      <div className="w-[calc(100%-4rem)] rounded-xl border bg-[rgb(255,255,255,0.1)] p-4 py-4 backdrop-blur-lg transition-all duration-300 hover:scale-105 hover:bg-[rgb(255,255,255,0.2)] xl:w-[calc(50%-2.5rem)]">
           <time className="font-caveat text-xs font-medium">
             {date}
           </time>

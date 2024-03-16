@@ -90,7 +90,7 @@ const Header = ({ project }: { project: any }) => {
             }
           </div>
 
-          <div className="content col-span-5 flex flex-col justify-center xl:col-span-3">
+          <div className="content radial_contrast relative col-span-5 flex flex-col justify-center xl:col-span-3">
             <h1 className="title mb-6 flex text-7xl font-black">
               {title} {real_project && <Icon.Star className='ml-2 text-yellow-400' size={28} />}
             </h1>

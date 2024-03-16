@@ -26,7 +26,7 @@ const AboutSantiago = () => {
           />
         </div>
 
-        <div className="santiago_content col-span-3 xl:ml-4">
+        <div className="santiago_content radial_contrast relative col-span-3 xl:ml-4">
           <h1 className="title mb-6 text-5xl font-[200]">
             Hello, my name is <span className="font-black">Santiago Salazar</span>
           </h1>

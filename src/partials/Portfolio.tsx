@@ -24,7 +24,7 @@ const SkillsData: SkillsType = Skills[0];
 const Portfolio = () => {
 
   return (
-    <FullSection id='Portfolio'>
+    <FullSection id='Portfolio' clases='radial_contrast'>
       <h1 className="mb-2 text-5xl font-black">Portfolio</h1>
       <p className='mb-10 w-2/3 text-center text-sm'>My strength lies in FrontEnd, and it&apos;s where I find things that dazzle me, but <span className="font-black text-red-600">I am currently developing a FullStack profile.</span></p>
       <ProjectCard />
