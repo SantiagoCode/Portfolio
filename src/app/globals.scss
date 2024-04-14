@@ -2,65 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
-body {
-  color: white;
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    
-    &::-webkit-scrollbar {
-      width: 12px;
-    }
-    
-    &::-webkit-scrollbar-track {
-      background: white;
-    }
-    
-    &::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.456); 
-      border-radius: 20px;     
-      border: 3px solid white;
-    }
-}
+html {
+	scroll-behavior: smooth;
 
-.HomeBackground.blur {
-  filter: blur(16px);
-}
+	body {
+		color: white;
+		background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 
-.real_tag {
-  transform: translateY(-50%) !important;
-}
+		&::-webkit-scrollbar {
+			width: 12px;
+		}
 
-.radial_contrast::after {
-  content: '';
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+		&::-webkit-scrollbar-track {
+			background: white;
+		}
 
-  background: rgba(0, 0, 0, 0.2);
-  filter: blur(50px);
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(0, 0, 0, 0.456);
+			border-radius: 20px;
+			border: 3px solid white;
+		}
+
+		.HomeBackground.blur {
+			filter: blur(16px);
+		}
+
+		.real_tag {
+			transform: translateY(-50%) !important;
+		}
+
+		.radial_contrast::after {
+			content: '';
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+
+			background: rgba(0, 0, 0, 0.2);
+			filter: blur(50px);
+		}
+
+		.ExperienceBox:hover {
+			.experience_agencie {
+				color: red;
+			}
+		}
+	}
 }
