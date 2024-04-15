@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react';
 import Image from 'next/image';
+import { Suspense } from 'react';
 import Link from 'next/link';
 import * as Icon from 'react-feather';
 import Tag from '@/components/Tag';
@@ -62,21 +63,26 @@ const Header = ({ project }: { project: any }) => {
 			<FullSection id='Project'>
 				<header className='z-20 mb-20 grid grid-cols-5 gap-6 xl:mb-0 xl:gap-20'>
 					<div className='relative col-span-5 mt-20 xl:col-span-2 xl:mt-0'>
-						<Image
-							src={imageRef}
-							height='1000'
-							width='1000'
-							className='my-2 rounded-xl border object-cover transition-all duration-300 ease-in xl:hover:scale-105'
-							alt={'OnceOnce'}
-						/>
-						{secondImageRef && (
+						{/* put the images inside a suspense component */}
+						<Suspense fallback={<div className='w-128 my-2 aspect-video animate-pulse rounded-xl border bg-gray-200'></div>}>
 							<Image
-								src={secondImageRef || imageRef}
+								src={imageRef}
 								height='1000'
 								width='1000'
-								className='my-2 rounded-xl border object-cover transition-all duration-300 ease-in xl:hover:scale-105'
+								className='my-2 aspect-video rounded-xl border object-cover transition-all duration-300 ease-in xl:hover:scale-105'
 								alt={'OnceOnce'}
 							/>
+						</Suspense>
+						{secondImageRef && (
+							<Suspense fallback={<div className='w-128 my-2 aspect-video animate-pulse rounded-xl border bg-gray-200'></div>}>
+								<Image
+									src={secondImageRef || imageRef}
+									height='1000'
+									width='1000'
+									className='my-2 aspect-video rounded-xl border object-cover transition-all duration-300 ease-in xl:hover:scale-105'
+									alt={'OnceOnce'}
+								/>
+							</Suspense>
 						)}
 					</div>
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Image from 'next/image';
 import Tag from '@/components/Tag';
 import FullSection from '@/components/FullSection';
@@ -69,23 +69,23 @@ const ProjectCard = () => {
 									key={`${projectKey}-name`}>
 									{project.title}
 								</CardItem>
-								<CardItem as='p' translateZ='60' className='mt-2 max-w-sm text-sm' key={`${projectKey}-description`}>
+								<CardItem as='p' translateZ='60' className='my-2 max-w-sm text-sm' key={`${projectKey}-description`}>
 									{project.short_description}
 								</CardItem>
 							</div>
-							<div>
-								<CardItem translateZ='100' className='mt-4 w-full' key={`${projectKey}-image`}>
-									<RouterLink linkRef={`${project.page}`}>
+							<CardItem translateZ='100' className='w-full' key={`${projectKey}-image`}>
+								<RouterLink linkRef={`${project.page}`}>
+									<Suspense fallback={<div className='w-128 my-2 aspect-video animate-pulse rounded-xl border bg-gray-200'></div>}>
 										<Image
 											src={project.imageRef}
 											height='1000'
 											width='1000'
-											className='h-50 w-full rounded-xl object-cover transition-all duration-300'
+											className='h-50 aspect-video w-full rounded-xl object-cover transition-all duration-300'
 											alt={project.title}
 										/>
-									</RouterLink>
-								</CardItem>
-							</div>
+									</Suspense>
+								</RouterLink>
+							</CardItem>
 							<ul className='flex flex-wrap justify-between pt-3'>
 								{listOfSkills.map((obj: Skill, index: number) => (
 									<CardItem translateZ={40} className='rounded-xs px-2' key={`${index}-stack`}>
