@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 import * as Icon from 'react-feather';
 
 const Navigation = () => {
@@ -13,37 +14,45 @@ const Navigation = () => {
 
 	return (
 		<div id='Navigation' className='fixed z-40 w-full opacity-0 transition-all delay-500 duration-500'>
-			<nav className='mx-auto mt-5 flex w-2/3 justify-between rounded-full border bg-[rgb(255,255,255,0.3)] px-8 py-4 backdrop-blur-lg'>
-				<div className='flex'>
-					<li className={navItemStyles}>
-						<Link className='flex' href='/'>
-							<Icon.Home size={24} className='xl:hidden'></Icon.Home>
-							<span className='hidden xl:block'>Home</span>
+			<div className='container mx-auto px-4'>
+				<nav className='mx-auto mt-5 flex justify-between rounded-full border bg-[rgb(255,255,255,0.3)] px-8 backdrop-blur-lg'>
+					<div className='flex'>
+						<Link href='/'>
+							<Image src='/image/logo_santiago1.svg' alt='logo' className='h-12' width={120} height={70} />
 						</Link>
-					</li>
+					</div>
 
-					{links.map((link, index) => (
-						<div key={index} className={`hidden xl:flex last-of-type:mr-6 ${navItemStyles}`}>
-							<Link href={`/${link[1]}`} className=''>
-								{link[0]}
+					<div className='flex items-center'>
+						<li className={navItemStyles}>
+							<Link className='flex' href='/'>
+								<Icon.Home size={24} className='xl:hidden'></Icon.Home>
+								<span className='hidden xl:block'>Home</span>
 							</Link>
-						</div>
-					))}
-				</div>
+						</li>
 
-				<div className='flex'>
-					<li className={`${navItemStyles} hover:scale-110 hover:text-red-900 transition-all`}>
-						<Link href='https://www.github.com/SantiagoCode' target='_blank'>
-							<Icon.GitHub size={24} />
-						</Link>
-					</li>
-					<li className={`${navItemStyles} hover:scale-110 hover:text-red-900 transition-all`}>
-						<Link href='https://www.linkedin.com/in/santiagocode/' target='_blank'>
-							<Icon.Linkedin size={24} />
-						</Link>
-					</li>
-				</div>
-			</nav>
+						{links.map((link, index) => (
+							<div key={index} className={`hidden xl:flex last-of-type:mr-6 ${navItemStyles}`}>
+								<Link href={`/${link[1]}`} className=''>
+									{link[0]}
+								</Link>
+							</div>
+						))}
+					</div>
+
+					<div className='flex items-center'>
+						<li className={`${navItemStyles} hover:scale-110 hover:text-red-900 transition-all`}>
+							<Link href='https://www.github.com/SantiagoCode' target='_blank'>
+								<Icon.GitHub size={24} />
+							</Link>
+						</li>
+						<li className={`${navItemStyles} hover:scale-110 hover:text-red-900 transition-all`}>
+							<Link href='https://www.linkedin.com/in/santiagocode/' target='_blank'>
+								<Icon.Linkedin size={24} />
+							</Link>
+						</li>
+					</div>
+				</nav>
+			</div>
 		</div>
 	);
 };
