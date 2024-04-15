@@ -31,7 +31,7 @@ function ContactSection() {
 		<section id='Contact' className='flex min-h-[80vh] w-full flex-col items-center justify-center py-6 opacity-0 transition-all duration-500 md:py-12 lg:py-16'>
 			<CardContainer>
 				<CardBody>
-					<div className='container mx-auto flex aspect-square w-[50vw] min-w-[300px] max-w-[500px] flex-col items-center justify-center gap-4 rounded-xl border bg-[rgb(255,255,255,0.1)] px-8 py-4 text-center shadow-md backdrop-blur-lg transition-all duration-300 hover:bg-[rgb(255,255,255,0.3)] md:px-6 xl:aspect-video'>
+					<div className='container footer_card_body mx-auto flex aspect-square w-[50vw] min-w-[300px] max-w-[500px] flex-col items-center justify-center gap-4 rounded-xl border bg-[rgb(255,255,255,0.1)] px-8 py-4 text-center shadow-md backdrop-blur-lg transition-all duration-300 md:hover:bg-[rgb(255,255,255,0.3)] md:px-6 xl:aspect-video'>
 						<div className='space-y-2'>
 							<h2 className='text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl'>Get in touch</h2>
 							<p className='md:text-xl/relaxed'>Reach out to start a conversation.</p>

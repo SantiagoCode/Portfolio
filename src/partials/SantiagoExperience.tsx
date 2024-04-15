@@ -74,9 +74,9 @@ const Experience = (props: { date: string; agencie: string; position: string }) 
 
 const ExperienceBox = ({ date, agencie, position }: { date: string; agencie: string; position: string }) => {
 	return (
-		<div className='ExperienceBox w-[calc(100%-4rem)] rounded-xl border bg-[rgb(255,255,255,0.1)] p-4 py-4 backdrop-blur-lg transition-all duration-300 hover:scale-105 hover:bg-[rgb(255,255,255,0.3)] xl:w-[calc(50%-2.5rem)]'>
+		<div className='group/card w-[calc(100%-4rem)] rounded-xl border bg-[rgb(255,255,255,0.1)] p-4 py-4 backdrop-blur-lg transition-all duration-300 hover:scale-105 md:hover:bg-[rgb(255,255,255,0.3)] xl:w-[calc(50%-2.5rem)]'>
 			<time className='font-caveat text-xs font-medium'>{date}</time>
-			<div className='experience_agencie text-base font-bold uppercase transition-all'>{agencie}</div>
+			<div className='text-base font-bold uppercase text-red-900 transition-all group-hover/card:text-red-900 md:text-white'>{agencie}</div>
 			<div className='text-xs'>{position}</div>
 		</div>
 	);

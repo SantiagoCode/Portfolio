@@ -49,13 +49,13 @@ const ProjectCard = () => {
 
 				return (
 					<CardContainer
-						className="inter-var group transition-all before:absolute before:h-full before:w-full before:rounded-xl before:border before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:transition-all before:duration-300 before:content-[''] before:hover:bg-[rgb(255,255,255,0.3)]"
+						className="inter-var portfolio_card_container group transition-all before:absolute before:h-full before:w-full before:rounded-xl before:border before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:transition-all before:duration-300 before:content-[''] md:md:before:hover:bg-[rgb(255,255,255,0.3)]"
 						key={projectKey}>
 						<CardBody className='relative flex h-full w-auto flex-col justify-between rounded-xl p-6'>
 							{project.real_project && (
 								<CardItem
 									translateZ='100'
-									className='real_tag absolute right-2.5 top-0 z-20 flex rounded-full border bg-[rgb(255,255,255,0.1)] px-6 py-3 font-bold text-yellow-400 backdrop-blur-xl transition-all hover:bg-[rgb(255,255,255,0.3)]'
+									className='real_tag absolute right-2.5 top-0 z-20 flex rounded-full border bg-[rgb(255,255,255,0.1)] px-6 py-3 font-bold text-yellow-400 backdrop-blur-xl transition-all md:hover:bg-[rgb(255,255,255,0.3)]'
 									key={`${projectKey}-name-${project.real_project}`}>
 									<p className='flex items-center'>
 										Real Project <Icon.Star className='ml-2' size={18} />
@@ -63,7 +63,10 @@ const ProjectCard = () => {
 								</CardItem>
 							)}
 							<div>
-								<CardItem translateZ='50' className='text-xl font-black transition-all group-hover:text-2xl group-hover:text-red-900' key={`${projectKey}-name`}>
+								<CardItem
+									translateZ='50'
+									className='project_title text-xl font-black text-red-900 transition-all group-hover:text-2xl md:text-white md:group-hover:text-red-900'
+									key={`${projectKey}-name`}>
 									{project.title}
 								</CardItem>
 								<CardItem as='p' translateZ='60' className='mt-2 max-w-sm text-sm' key={`${projectKey}-description`}>

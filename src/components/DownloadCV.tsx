@@ -9,7 +9,7 @@ const DownloadCV = () => {
 				<Link href='CV/Santiago_Salazar-FrontEnd_Dev.pdf' target='_blank' download>
 					<CardItem
 						translateZ='20'
-						className='flex bg-[rgb(255,255,255,0.1)] hover:bg-[rgb(255,255,255,0.3)] transition-all backdrop-blur-xl border rounded-full py-3 px-6'>
+						className='download_button flex bg-[rgb(255,255,255,0.1)] md:hover:bg-[rgb(255,255,255,0.3)] transition-all backdrop-blur-xl border rounded-full py-3 px-6'>
 						Download CV
 					</CardItem>
 				</Link>

@@ -22,7 +22,7 @@ const Hero = () => {
 
 				<CardContainer
 					id={'Hero_Stack'}
-					className="inter-var transition-all before:absolute before:h-full before:w-full before:scale-75 before:rounded-full before:border before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:transition-all before:duration-300 before:content-[''] before:hover:bg-[rgb(255,255,255,0.3)] md:before:scale-100">
+					className="inter-var hero_card_container transition-all before:absolute before:h-full before:w-full before:scale-75 before:rounded-full before:border before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:transition-all before:duration-300 before:content-[''] md:before:hover:bg-[rgb(255,255,255,0.3)] md:before:scale-100">
 					<CardBody className='relative h-full w-auto scale-75 px-8 py-2 md:scale-100'>
 						<Technologies />
 					</CardBody>
