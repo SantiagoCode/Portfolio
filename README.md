@@ -13,25 +13,35 @@ Little by little I will improve it as a template to make it more dynamic. I will
 
 ## Screenshot 💻
 
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](image.jpg)
+![alt text](image-2.jpg)
+![alt text](image-3.jpg)
 
 ## Run Locally 🚀
 
 Clone the project
 
 ```bash
-  git clone https://github.com/SantiagoCode/Portfolio.git
+git clone https://github.com/SantiagoCode/Portfolio.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Portfolio
+cd Portfolio
 ```
 
-...
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the project
+
+```bash
+npm run dev
+```
 
 ## Author
 
