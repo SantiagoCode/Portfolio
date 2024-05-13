@@ -54,8 +54,9 @@ const ExperienceResume = () => {
 const TimeLine = () => {
 	return (
 		<div className='relative col-span-2 space-y-8 before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent xl:before:mx-auto xl:before:translate-x-0'>
-			<Experience date={'2022 - 2023'} agencie={'Movidagrafica'} position={'FullStack developer & Team Leader'} />
-			<Experience date={'2022'} agencie={'Studio Salvatori'} position={'FrontEnd developer'} />
+			<Experience date={'2024 ~ Present'} agencie={'789.mx'} position={'FrontEnd Developer'} />
+			<Experience date={'2022 ~ 2023'} agencie={'Movidagrafica'} position={'FullStack Developer & Team Leader'} />
+			<Experience date={'2022'} agencie={'Studio Salvatori'} position={'FrontEnd Developer'} />
 		</div>
 	);
 };
