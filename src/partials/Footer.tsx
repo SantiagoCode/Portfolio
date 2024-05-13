@@ -31,7 +31,7 @@ function ContactSection() {
 		<section id='Contact' className='flex min-h-[80vh] w-full flex-col items-center justify-center py-6 opacity-0 transition-all duration-500 md:py-12 lg:py-16'>
 			<CardContainer>
 				<CardBody>
-					<div className='container footer_card_body mx-auto flex aspect-square w-[50vw] min-w-[300px] max-w-[500px] flex-col items-center justify-center gap-4 rounded-xl border bg-[rgb(255,255,255,0.1)] px-8 py-4 text-center shadow-md backdrop-blur-lg transition-all duration-300 md:hover:bg-[rgb(255,255,255,0.3)] md:px-6 xl:aspect-video'>
+					<div className='footer_card_body container mx-auto flex aspect-square w-[50vw] min-w-[300px] max-w-[500px] flex-col items-center justify-center gap-4 rounded-xl border bg-[rgb(255,255,255,0.1)] px-8 py-4 text-center shadow-md backdrop-blur-lg transition-all duration-300 md:px-6 md:hover:bg-[rgb(255,255,255,0.3)] xl:aspect-video'>
 						<div className='space-y-2'>
 							<h2 className='text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl'>Get in touch</h2>
 							<p className='md:text-xl/relaxed'>Reach out to start a conversation.</p>
@@ -63,7 +63,7 @@ const Copyright = () => {
 			<Link href={'https://github.com/SantiagoCode/Portfolio'} target='_blank' className='text-ms mb-1 font-bold transition-all ease-in xl:hover:scale-105'>
 				Take a look at the code of this portfolio on my GitHub. 👋
 			</Link>
-			<div className='text-xs'>Copyright © 2024 - Santiago Salazar Dev</div>
+			<div className='text-xs'>Copyright © 2024 ~ Santiago Salazar Dev</div>
 		</div>
 	);
 };
