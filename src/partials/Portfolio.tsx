@@ -38,7 +38,7 @@ const ProjectCard = () => {
 	const SkillsKeys = Object.keys(SkillsData);
 
 	return (
-		<div className='grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4'>
+		<div className='grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3'>
 			{Projects.map((project, projectKey) => {
 				const listOfSkills = project.tech.reduce((accumulator: Skill[], currentValue: string) => {
 					if (SkillsKeys.includes(currentValue)) {
