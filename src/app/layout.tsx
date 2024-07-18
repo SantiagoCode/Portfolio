@@ -21,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Navigation />
 				<div className='flex min-h-screen flex-col justify-between bg-black'>
 					{children}
+        	<SpeedInsights />
 					<Footer />
 				</div>
 			</body>
