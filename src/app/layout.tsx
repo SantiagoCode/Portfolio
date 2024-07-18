@@ -3,7 +3,6 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.scss';
 import Navigation from '@/components/Navigation';
 import Footer from '@/partials/Footer';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const Jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -21,7 +20,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Navigation />
 				<div className='flex min-h-screen flex-col justify-between bg-black'>
 					{children}
-        	<SpeedInsights />
 					<Footer />
 				</div>
 			</body>
