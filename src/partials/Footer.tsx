@@ -33,8 +33,8 @@ function ContactSection() {
 				<CardBody>
 					<div className='footer_card_body container mx-auto flex aspect-square w-[50vw] min-w-[300px] max-w-[500px] flex-col items-center justify-center gap-4 rounded-xl border bg-[rgb(255,255,255,0.1)] px-8 py-4 text-center shadow-md backdrop-blur-lg transition-all duration-300 md:px-6 md:hover:bg-[rgb(255,255,255,0.3)] xl:aspect-video'>
 						<div className='space-y-2'>
-							<h2 className='text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl'>Get in touch</h2>
-							<p className='md:text-xl/relaxed'>Reach out to start a conversation.</p>
+							<h2 className='text-3xl font-black tracking-tighter sm:text-4xl md:text-5xl'>Ponte en contacto</h2>
+							<p className='md:text-xl/relaxed'>Contáctame para iniciar una conversación.</p>
 						</div>
 						<div className='grid grid-cols-2 items-center justify-center gap-4 md:gap-8'>
 							<NetworkLink linkDirection='https://www.linkedin.com/in/santiagocode/' network='LinkedIn'>
@@ -61,7 +61,7 @@ const Copyright = () => {
 	return (
 		<div className='flex flex-col justify-center py-3 text-center'>
 			<Link href={'https://github.com/SantiagoCode/Portfolio'} target='_blank' className='text-ms mb-1 font-bold transition-all ease-in xl:hover:scale-105'>
-				Take a look at the code of this portfolio on my GitHub. 👋
+				Echa un vistazo al código de este portafolio en mi GitHub. 👋
 			</Link>
 			<div className='text-xs'>Copyright © 2024 ~ Santiago Salazar Dev</div>
 		</div>

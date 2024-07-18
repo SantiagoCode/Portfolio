@@ -18,38 +18,39 @@ const ExperienceResume = () => {
 	return (
 		<div className='santiago_content col-span-3 mb-12 xl:mb-0'>
 			<h1 className='title mb-6 text-5xl font-[200]'>
-				Something about <span className='font-black'>my work experience</span>
+				Algo sobre <span className='font-black'>mi experiencia laboral</span>
 			</h1>
 			<p>
 				<span>
-					As a <span className='font-bold'>passionate FrontEnd developer</span>, I have specialized in <span className='font-bold'>React.js</span>, creating{' '}
-					<span className='font-bold'>exceptional web experiences</span> with JavaScript and CSS. At <span className='font-bold'>Movidagráfica™</span>, I had the
-					opportunity to lead a small team on a high-demand project, allowing me to demonstrate my leadership skills and attention to detail.
+					Como <span className='font-bold'>desarrollador FrontEnd apasionado</span>, me he especializado en <span className='font-bold'>React.js</span>, creando{' '}
+					<span className='font-bold'>experiencias web excepcionales</span> con JavaScript y CSS. En <span className='font-bold'>Movidagráfica™</span>, tuve la
+					oportunidad de liderar un pequeño equipo en un proyecto de alta demanda, lo que me permitió demostrar mis habilidades de liderazgo y atención al detalle.
 				</span>
 				<br />
 				<br />
 				<span>
-					My experience also includes working as a <span className='font-bold'>FrontEnd Developer</span> at <span className='font-bold'>Studio Salvatori</span>,
-					where I learned the fundamentals of web development. My technical skills and experiences include:{' '}
+					Mi experiencia también incluye trabajar como <span className='font-bold'>Desarrollador FrontEnd</span> en <span className='font-bold'>Studio Salvatori</span>,
+					donde aprendí los fundamentos del desarrollo web. Mis habilidades técnicas y experiencias incluyen:{' '}
 					<span className='font-bold'>
-						React, NextJS, HTML, CSS and SASS, JavaScript and TypeScript, Git and GitHub, WordPress and ACF, Laravel, BootstrapCSS, BulmaCSS, and TailwindCSS
+						React, NextJS, HTML, CSS y SASS, JavaScript y TypeScript, Git y GitHub, Laravel, BootstrapCSS, BulmaCSS, y TailwindCSS
 					</span>
 					.
 				</span>
 				<br />
 				<br />
 				<span>
-					In addition to my technical experience, I hold a{' '}
+					Además de mi experiencia técnica, poseo una{' '}
 					<Link href={'https://www.efset.org/cert/xFaeXR'} target='_blank' className='font-bold'>
-						B2 level English certification
+						certificación de inglés nivel B2
 					</Link>
-					, allowing me to communicate effectively in a global environment. I am excited to contribute to software development with innovative solutions, staying
-					updated with the latest technological trends. I am ready to contribute with passion and commitment to a team where I can continue to grow professionally!
+					, lo que me permite comunicarme efectivamente en un entorno global. Estoy emocionado de contribuir al desarrollo de software con soluciones innovadoras, manteniéndome
+					actualizado con las últimas tendencias tecnológicas. ¡Estoy listo para contribuir con pasión y compromiso a un equipo donde pueda seguir creciendo profesionalmente!
 				</span>
 			</p>
 		</div>
 	);
 };
+
 
 const TimeLine = () => {
 	return (

@@ -17,12 +17,12 @@ const Hero = () => {
 			<div id='Hero' className='container relative mx-auto mb-12 flex min-h-screen flex-col justify-center overflow-hidden px-4'>
 				<div className='z-20 text-center'>
 					<Image src={`/image/logo_santiago1.svg`} alt='logo' className='mx-auto' width={800} height={250} priority />
-					<h2 className='font-300 text-xl md:text-3xl lg:text-5xl'>FrontEnd Developer</h2>
+					<h2 className='font-300 text-xl md:text-3xl lg:text-5xl'>Desarrollador Web</h2>
 				</div>
 
 				<CardContainer
 					id={'Hero_Stack'}
-					className="inter-var hero_card_container transition-all before:absolute before:h-full before:w-full before:scale-75 before:rounded-full before:border before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:transition-all before:duration-300 before:content-[''] md:before:hover:bg-[rgb(255,255,255,0.3)] md:before:scale-100">
+					className="inter-var hero_card_container transition-all before:absolute before:h-full before:w-full before:scale-75 before:rounded-full before:border before:bg-[rgb(255,255,255,0.1)] before:backdrop-blur-xl before:transition-all before:duration-300 before:content-[''] md:before:scale-100 md:before:hover:bg-[rgb(255,255,255,0.3)]">
 					<CardBody className='relative h-full w-auto scale-75 px-8 py-2 md:scale-100'>
 						<Technologies />
 					</CardBody>

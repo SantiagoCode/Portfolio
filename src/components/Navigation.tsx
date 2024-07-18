@@ -5,10 +5,10 @@ import * as Icon from 'react-feather';
 
 const Navigation = () => {
 	const links = [
-		['Home', '/'],
-		['About Me', '#AboutMe'],
-		['My Portfolio', '#Portfolio'],
-		['Contact Me', '#Contact'],
+		['Inicio', '/'],
+		['Mi Portafolio', '#Portfolio'],
+		['Sobre Mí', '#AboutMe'],
+		['Contáctame', '#Contact'],
 	];
 
 	const navItemStyles = 'ml-3 list-none capitalize transition-all ease-in text-lg md:ml-6 font-semibold hover:text-red-900';
