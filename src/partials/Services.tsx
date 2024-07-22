@@ -108,7 +108,6 @@ function BoltIcon(props: any) {
   )
 }
 
-
 function CodeIcon(props: any) {
   return (
     <svg
@@ -128,7 +127,6 @@ function CodeIcon(props: any) {
     </svg>
   )
 }
-
 
 function RocketIcon(props: any) {
   return (
@@ -151,7 +149,6 @@ function RocketIcon(props: any) {
     </svg>
   )
 }
-
 
 function XIcon(props: any) {
   return (
