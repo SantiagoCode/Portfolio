@@ -11,7 +11,7 @@ import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card';
 const Jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Santiago - FrontEnd Developer',
+	title: 'Santiago ~ Web Developer',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -10,8 +10,8 @@ export default function Servicios() {
         <div className="radial_contrast container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-6 text-center">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter text-[#f0f0f0] sm:text-5xl">Mis Servicios Web</h2>
-              <p className="max-w-[700px] text-[#c0c0c0] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Mis servicios web</h2>
+              <p className="mx-auto mb-10 w-full text-center">
                 Ofrezco un paquete completo de servicios de desarrollo web para asegurar el éxito de tu presencia en línea.
               </p>
             </div>
@@ -26,12 +26,12 @@ export default function Servicios() {
                   translateZ='50'
                   className='service_title text-xl transition-all'>
                   <div className="mb-4 flex items-center gap-4">
-                    <div className="rounded-md bg-[#8b0000] p-3 text-[#f0f0f0]">
+                    <div className="rounded-md bg-[#8b0000] p-3">
                       <CodeIcon className="h-6 w-6" />
                     </div>
-                    <h3 className="text-xl font-semibold text-[#f0f0f0]">Diseño Web</h3>
+                    <h3 className='project_title text-xl font-black text-white transition-all group-hover:text-2xl md:group-hover:text-red-900'>Diseño Web</h3>
                   </div>
-                  <p className="text-[#c0c0c0]">
+                  <p className='my-2 max-w-sm text-sm md:text-base'>
                     Diseño sitios web atractivos y funcionales que se adaptan a la identidad de tu marca. Cada diseño es personalizado para garantizar una experiencia de usuario excepcional y una interfaz visualmente impactante.
                   </p>
                 </CardItem>
@@ -45,12 +45,12 @@ export default function Servicios() {
                   translateZ='50'
                   className='service_title text-xl transition-all'>
                   <div className="mb-4 flex items-center gap-4">
-                    <div className="rounded-md bg-[#8b0000] p-3 text-[#f0f0f0]">
+                    <div className="rounded-md bg-[#8b0000] p-3">
                       <RocketIcon className="h-6 w-6" />
                     </div>
-                    <h3 className="text-xl font-semibold text-[#f0f0f0]">Desarrollo Web</h3>
+                    <h3 className='project_title text-xl font-black text-white transition-all group-hover:text-2xl md:group-hover:text-red-900'>Desarrollo Web</h3>
                   </div>
-                  <p className="text-[#c0c0c0]">
+                  <p className='my-2 max-w-sm text-sm md:text-base'>
                     Desarrollo sitios web robustos y escalables, incluyendo landing pages, páginas de contacto y sitios multipágina. Utilizo las últimas tecnologías para garantizar rendimiento, seguridad y capacidad de crecimiento según las necesidades de tu negocio.
                   </p>
                 </CardItem>
@@ -64,12 +64,12 @@ export default function Servicios() {
                   translateZ='50'
                   className='service_title text-xl transition-all'>
                   <div className="mb-4 flex items-center gap-4">
-                    <div className="rounded-md bg-[#8b0000] p-3 text-[#f0f0f0]">
+                    <div className="rounded-md bg-[#8b0000] p-3">
                       <BoltIcon className="h-6 w-6" />
                     </div>
-                    <h3 className="text-xl font-semibold text-[#f0f0f0]">Accesibilidad Web</h3>
+                    <h3 className='project_title text-xl font-black text-white transition-all group-hover:text-2xl md:group-hover:text-red-900'>Accesibilidad Web</h3>
                   </div>
-                  <p className="text-[#c0c0c0]">
+                  <p className='my-2 max-w-sm text-sm md:text-base'>
                     Aseguro que tu sitio web sea accesible para todos los usuarios, cumpliendo con las normas y estándares de accesibilidad. Esto incluye optimización para lectores de pantalla, navegación por teclado y otros ajustes necesarios para una experiencia inclusiva.
                   </p>
                 </CardItem>

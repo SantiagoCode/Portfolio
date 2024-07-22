@@ -25,7 +25,7 @@ const Portfolio = () => {
 	return (
 		<FullSection id='Portfolio' clases='radial_contrast'>
 			<h1 className='mb-2 text-5xl font-black'>Portafolio</h1>
-			<p className='mb-10 w-2/3 text-center'>
+			<p className='mb-10 w-full text-center'>
 				Mi fortaleza radica en el FrontEnd, donde encuentro cosas que me deslumbran, pero <br />
 				<span className='font-bold'>actualmente estoy desarrollando un perfil FullStack.</span>
 			</p>
@@ -66,7 +66,7 @@ const ProjectCard = () => {
 							<div>
 								<CardItem
 									translateZ='50'
-									className='project_title text-xl font-black text-red-900 transition-all group-hover:text-2xl md:text-white md:group-hover:text-red-900'
+									className='project_title text-xl font-black text-white transition-all group-hover:text-2xl md:group-hover:text-red-900'
 									key={`${projectKey}-name`}>
 									{project.title}
 								</CardItem>

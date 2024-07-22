@@ -17,7 +17,7 @@ const SantiagoExperience = () => {
 const ExperienceResume = () => {
 	return (
 		<div className='santiago_content col-span-3 mb-12 xl:mb-0'>
-			<h1 className='title mb-6 text-5xl font-[200]'>
+			<h1 className='title mb-6 md:text-5xl font-[200] text-4xl  '>
 				Algo sobre <span className='font-black'>mi experiencia laboral</span>
 			</h1>
 			<p>

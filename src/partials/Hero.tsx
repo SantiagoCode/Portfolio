@@ -17,7 +17,7 @@ const Hero = () => {
 			<div id='Hero' className='container relative mx-auto mb-12 flex min-h-screen flex-col justify-center overflow-hidden px-4'>
 				<div className='z-20 text-center'>
 					<Image src={`/image/logo_santiago1.svg`} alt='logo' className='mx-auto' width={800} height={250} priority />
-					<h2 className='font-300 text-xl md:text-3xl lg:text-5xl'>Desarrollador Web</h2>
+					<h2 className='font-300 text-xl md:text-3xl lg:text-5xl'>Web Developer</h2>
 				</div>
 
 				<CardContainer
@@ -38,11 +38,12 @@ const Technologies = () => {
 		['tailwindBRAND', 'png', 45, 20],
 		['JavaScript', 'png', 30, 30],
 		['react', 'svg', 32, 100],
+		['Laravel', 'png', 40, 40],
 		['asd', 'svg', 32, 100],
 	];
 
 	return (
-		<ul className='flex items-center'>
+		<ul className='flex items-center justify-center'>
 			{logoTechnologies.map(([text, ext, w, h]: any, index: number) => (
 				<CardItem translateZ={40} className='rounded-xs px-2' key={`${index}-stack`}>
 					<li key={index} className='mx-2 flex items-center'>

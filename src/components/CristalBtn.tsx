@@ -10,7 +10,7 @@ const CristalBtn = ({ text, href, blank = false, download = false }: { text: str
         <Link href={href} target={blank ? '_blank' : ''} download={download ? true : false}>
           <CardItem
             translateZ='20'
-            className='download_button flex rounded-full border bg-[rgb(255,255,255,0.1)] px-6 py-3 backdrop-blur-xl transition-all md:hover:bg-[rgb(255,255,255,0.3)]'>
+            className='download_button flex rounded-full border bg-[rgb(255,255,255,0.1)] px-6 py-3 text-sm backdrop-blur-xl transition-all md:text-base md:hover:bg-[rgb(255,255,255,0.3)]'>
             {text}
           </CardItem>
         </Link>
