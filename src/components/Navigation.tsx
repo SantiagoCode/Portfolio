@@ -6,7 +6,7 @@ import * as Icon from 'react-feather';
 const Navigation = () => {
 	const links = [
 		['Inicio', '/'],
-		['Mi Portafolio', '#Portfolio'],
+		['Portafolio', '#Portfolio'],
 		['Servicios', '#Servicios'],
 		['Sobre Mí', '#AboutMe'],
 		['Contáctame', '#Contact'],
