@@ -1,7 +1,10 @@
+import Link from 'next/link';
 import React from 'react';
 import FullSection from '@/components/FullSection';
 import Image from 'next/image';
 import DownloadCV from '@/components/DownloadCV';
+import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card';
+import CristalBtn from '@/components/CristalBtn';
 
 const AboutMe = () => {
 	return (
@@ -43,7 +46,10 @@ const AboutSantiago = () => {
 				</p>
 				<br />
 
-				<DownloadCV />
+				<div className="flex gap-4">
+					<CristalBtn text='Descarga mi CV' href='CV/Santiago_Salazar-FrontEnd_Dev.pdf' blank={true} download={true}/>
+					<CristalBtn text='Conectemos' href='/#Contact' blank={false} download={false}/>
+				</div>
 			</div>
 		</div>
 	);
