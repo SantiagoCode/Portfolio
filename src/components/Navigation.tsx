@@ -7,7 +7,7 @@ const Navigation = () => {
 	const links = [
 		['Inicio', '/'],
 		['Portafolio', '#Portfolio'],
-		['Servicios', '#Servicios'],
+		['Servicios', '#Services'],
 		['Sobre Mí', '#AboutMe'],
 		['Contáctame', '#Contact'],
 	];

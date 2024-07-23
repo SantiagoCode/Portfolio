@@ -10,7 +10,7 @@ const FullSection = ({
   clases?: string
 }) => {
   return (
-    <div id={id || ''} className={`z-20 container relative mx-auto px-6 mb-12 md:mb-4 min-h-screen flex flex-col items-center justify-center opacity-0 transition-all duration-500 ${clases}`} >
+    <div id={id || ''} className={`z-20 container relative mx-auto px-6 my-[6rem] flex flex-col items-center justify-center opacity-0 transition-all duration-500 ${clases}`} >
       {children}
     </div> 
   )

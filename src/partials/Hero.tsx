@@ -43,7 +43,7 @@ const Technologies = () => {
 	];
 
 	return (
-		<ul className='flex items-center justify-center'>
+		<ul className='flex flex-wrap items-center justify-center'>
 			{logoTechnologies.map(([text, ext, w, h]: any, index: number) => (
 				<CardItem translateZ={40} className='rounded-xs px-2' key={`${index}-stack`}>
 					<li key={index} className='mx-2 flex items-center'>

@@ -1,6 +1,6 @@
 "use client"
 
-const idSections = [ 'Navigation', 'Hero_Stack', 'AboutMe', 'Portfolio', 'SantiagoExperience', 'Contact', 'Project', 'Gallery' ]
+const idSections = [ 'Navigation', 'Hero_Stack', 'AboutMe', 'Portfolio', 'Services', 'SantiagoExperience', 'Contact', 'Project', 'Gallery' ]
 
 const removeBlur = () => {
   const el = document.querySelector('.HomeBackground')

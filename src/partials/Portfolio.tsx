@@ -63,7 +63,7 @@ const ProjectCard = () => {
 									</p>
 								</CardItem>
 							)}
-							<div>
+							<div className='mb-2'>
 								<CardItem
 									translateZ='50'
 									className='project_title text-xl font-black text-white transition-all group-hover:text-2xl md:group-hover:text-red-900'
