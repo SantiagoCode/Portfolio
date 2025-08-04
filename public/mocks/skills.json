@@ -33,8 +33,8 @@
     "06": {
       "name": "React JS",
       "url": "https://react.dev/learn",
-      "textColor": "#375E7F",
-      "bgColor": "#ACE8FF"
+      "textColor": "#ffffff",
+      "bgColor": "#58c4dc"
     },
     "07": {
       "name": "Vite",
@@ -51,8 +51,8 @@
     "09": {
       "name": "Tailwind CSS",
       "url": "https://v2.tailwindcss.com/docs",
-      "textColor": "#22665B",
-      "bgColor": "#A8F2E7"
+      "textColor": "#ffffff",
+      "bgColor": "#00bcff"
     },
     "10": {
       "name": "Next JS",
@@ -71,6 +71,18 @@
       "url": "https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0",
       "textColor": "#46376A",
       "bgColor": "#7C53DB"
+    },
+    "13": {
+      "name": "GSAP",
+      "url": "https://greensock.com/gsap/",
+      "textColor": "#22665B",
+      "bgColor": "#abff84"
+    },
+    "14": {
+      "name": "Three.js",
+      "url": "https://threejs.org/",
+      "textColor": "#000000",
+      "bgColor": "#ffffff"
     }
   }
 ]

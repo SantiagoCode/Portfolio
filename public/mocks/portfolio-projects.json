@@ -1,5 +1,19 @@
 [
 	{
+		"id": "anfora",
+		"real_project": true,
+		"title": "Anfora Global",
+		"short_description": "Website developed with Next.js, React, Three.js and GSAP for a company dedicated to the introduction and distribution of food products.",
+		"description": "I completely transformed a static website with a single 3D model into an interactive and immersive experience, inspired by the design and concept of theyearofgreta.com. Through extensive restructuring and refactoring, I integrated modern technologies such as Next.js, React, and Three.js to achieve seamless transitions, dynamic sections, and striking visual interactions. The result is a web platform for a food company that not only presents information but also engages the user in a compelling digital narrative. This project showcases my ability to redesign solutions from the ground up, enrich the user experience, and bring complex ideas to life through code.",
+		"url": "https://anfora.global/",
+		"page": "/portfolio/anfora",
+		"imageRef": "/image/anfora-4.png",
+		"secondImageRef": "/image/anfora-2.png",
+		"ListOfImages": ["anfora-1.png", "anfora-2.png", "anfora-3.png", "anfora-4.png", "anfora-5.png", "anfora-6.png"],
+		"tech": ["06", "09", "13", "14"],
+		"date": "July - 2025"
+	},
+	{
 		"id": "onceonce",
 		"real_project": true,
 		"title": "OnceOnce",
